@@ -129,14 +129,14 @@ document.addEventListener("DOMContentLoaded", function(event){
         }else if (key == 'author'){
           td1.innerHTML += `<a href="${authorlink}" style="font-size: 12px;">${author}</a>`
         }else if (key=='update'){
-          let imglink = `https://img.shields.io/${host}/last-commit/${author}/${reponame}`
+          let imglink = `https://img.shields.io/${host}/last-commit/${author}/${reponame}?label=%20`
           td1.innerHTML += `<a href="${item['repo']}"><img src="${imglink}"></img></a>`
         }else if (key=='star'){
-          let imglink = `https://img.shields.io/${host}/stars/${author}/${reponame}`
-          td1.innerHTML += `<a href="${item['repo']}"><img src="${imglink}"></img></a>`
+          let imglink = `https://img.shields.io/${host}/stars/${author}/${reponame}?label=%20`
+          td1.innerHTML += `<a href="${item['repo']}/stargazers"><img src="${imglink}"></img></a>`
         }else{
           let val = item[key] || 0
-          td1.innerHTML = `<i style="font-size: 12px;">${val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</i>`
+          td1.innerHTML = `<i style="font-size: 12px;">${val}</i>`
         }
         tr.appendChild(td1);
       });
