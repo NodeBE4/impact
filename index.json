@@ -15,13 +15,13 @@
         "repo": "https://github.com/Terminus2049/Not-exist-in-douban",
         "desc": "豆瓣不存在的书影音",
         "hash": "bbf8701e6350cacba7580f75e7d3a2a9",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/996icu/996.ICU",
         "desc": "996.ICU",
         "hash": "8892e4153a89c495b34511d1ab45c850",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/fuckcqcs/fuckcqcs",
@@ -105,7 +105,7 @@
         "repo": "https://github.com/LirenCollege/LirenCollege.github.io",
         "desc": "立大博客",
         "hash": "9249b251ae972b619e304d8c456a0783",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/Terminus2049/Terminus2049.github.io",
@@ -117,7 +117,7 @@
         "repo": "https://github.com/Terminus2049/Wechatscope",
         "desc": "查看被删除的微信公众号文章",
         "hash": "1aa3ec4b408e8894aaeeccd6547bd3b6",
-        "vote": 1
+        "vote": 3
     },
     {
         "repo": "https://github.com/Terminus2049/matters-metadata",
@@ -135,13 +135,13 @@
         "repo": "https://github.com/2049bbs/2049bbs.github.io",
         "desc": "2049BBS 镜像站，每15分钟更新",
         "hash": "3be5bf7a348aaf82c12c15daa3f73028",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/speechfree/letscorp",
         "desc": "墙外楼镜像站",
         "hash": "06cbaf93d15350d668d66d0e8454d13f",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/china-digital-times/china-digital-times.github.io",
@@ -230,7 +230,7 @@
     {
         "repo": "https://github.com/NodeBE4/opinion",
         "desc": "聚合以社会、政治话题为主的文章和社交媒体上优秀Up主的评论 ",
-        "vote": 2,
+        "vote": 3,
         "hash": "184dc00d00fae28d0efdc9b5c7b7f98d"
     },
     {
@@ -238,5 +238,89 @@
         "desc": "中国社会与政治事件时间线展示和新闻事件提交网站",
         "vote": 1,
         "hash": "1319f5423520b333172ca83acf013b13"
+    },
+    {
+        "repo": "https://github.com/speechfree/fightforfreedom",
+        "desc": "内容根据 中国文字狱事件盘点 发布的推特整理而成。\r\n\r\n盘点中国近年文字狱事件，为中国网警执法案例做义务宣传！#言论自由 Collection of incidents that Chinese authorities violate rights of speech freedom. #speechfreedom",
+        "vote": 1,
+        "hash": "5f56ebe5cd99b5207dcd51fdfd276f9d"
+    },
+    {
+        "repo": "https://github.com/WomenInNCoV/WomenInNCoV.github.io",
+        "desc": "",
+        "vote": 1,
+        "hash": "5e8b6c8fedafd4a7c3e838543f383ce2"
+    },
+    {
+        "repo": "https://github.com/zhangrunxu/zhangrunxu.github.io",
+        "desc": "许章润非官方言论集",
+        "vote": 1,
+        "hash": "ce30a328192f4f301479088bd67bb2aa"
+    },
+    {
+        "repo": "https://github.com/martinwu42/pkubbsbackup",
+        "desc": "北大未名BBS备份",
+        "vote": 1,
+        "hash": "921014bb2531a96104e179a7b27511f2"
+    },
+    {
+        "repo": "https://github.com/ctf-db/onechildpolicy",
+        "desc": "One Child Policy 相关书影音",
+        "vote": 1,
+        "hash": "1cd5ecacfc3b39028aa7d394bd26fe1e"
+    },
+    {
+        "repo": "https://github.com/CNwoman-bot/evil-man",
+        "desc": "Evil Man - 中国男性之恶",
+        "vote": 1,
+        "hash": "f9ec80d4982592c680ce893bd17287c6"
+    },
+    {
+        "repo": "https://github.com/ffffffff0x/Dork-Admin",
+        "desc": "盘点近年来的数据泄露、供应链污染事件",
+        "vote": 1,
+        "hash": "3f851e6f6ec9ab9adce244511dd547eb"
+    },
+    {
+        "repo": "https://github.com/ffffffff0x/Digital-Privacy",
+        "desc": "一个关于数字隐私搜集、保护、清理集一体的方案,外加开源信息收集(OSINT)对抗 (长期更新)",
+        "vote": 1,
+        "hash": "52c0849551d8b8c3f13e3f58afef72fc"
+    },
+    {
+        "repo": "https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo",
+        "desc": "学习强国 懒人刷分工具 自动学习",
+        "vote": 1,
+        "hash": "4982f68bfa87c1c757798a220011f459"
+    },
+    {
+        "repo": "https://github.com/sikaozhe1997/Xin-Yue",
+        "desc": "岳昕：致北大师生与北大外国语学院的一封公开信",
+        "vote": 1,
+        "hash": "2a97a61cf238921a449dd382f1135c56"
+    },
+    {
+        "repo": "https://github.com/shengxinjing/programmer-job-blacklist",
+        "desc": "🙈程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞",
+        "vote": 1,
+        "hash": "be25ba2a785dc242a1de06435e209d8e"
+    },
+    {
+        "repo": "https://github.com/programthink/zhao",
+        "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
+        "vote": 2,
+        "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
+    },
+    {
+        "repo": "https://github.com/cn/constitution",
+        "desc": "中华人民共和国宪法",
+        "vote": 1,
+        "hash": "31ae7b6c6132e78e020a3ff08e0320c7"
+    },
+    {
+        "repo": "https://github.com/Gnothi-Seauton/COVID-19-timeline",
+        "desc": "记录自2019年12月起武汉新冠肺炎疫情进展的时间线。",
+        "vote": 2,
+        "hash": "85b7b1ef7faebb0ad328110c53404b8a"
     }
 ]
