@@ -250,5 +250,17 @@
         "desc": "",
         "vote": 1,
         "hash": "5e8b6c8fedafd4a7c3e838543f383ce2"
+    },
+    {
+        "repo": "https://github.com/zhangrunxu/zhangrunxu.github.io",
+        "desc": "许章润非官方言论集",
+        "vote": 1,
+        "hash": "ce30a328192f4f301479088bd67bb2aa"
+    },
+    {
+        "repo": "https://github.com/martinwu42/pkubbsbackup",
+        "desc": "北大未名BBS备份",
+        "vote": 1,
+        "hash": "921014bb2531a96104e179a7b27511f2"
     }
 ]
