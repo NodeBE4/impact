@@ -238,5 +238,17 @@
         "desc": "中国社会与政治事件时间线展示和新闻事件提交网站",
         "vote": 1,
         "hash": "1319f5423520b333172ca83acf013b13"
+    },
+    {
+        "repo": "https://github.com/speechfree/fightforfreedom",
+        "desc": "内容根据 中国文字狱事件盘点 发布的推特整理而成。\r\n\r\n盘点中国近年文字狱事件，为中国网警执法案例做义务宣传！#言论自由 Collection of incidents that Chinese authorities violate rights of speech freedom. #speechfreedom",
+        "vote": 1,
+        "hash": "5f56ebe5cd99b5207dcd51fdfd276f9d"
+    },
+    {
+        "repo": "https://github.com/WomenInNCoV/WomenInNCoV.github.io",
+        "desc": "",
+        "vote": 1,
+        "hash": "5e8b6c8fedafd4a7c3e838543f383ce2"
     }
 ]
