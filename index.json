@@ -224,13 +224,19 @@
     {
         "repo": "https://github.com/duty-machine/duty-machine",
         "desc": "一个备份网络文章的服务。当前支持的网站有：微信公众平台，微博文章，知乎专栏，豆瓣日记，豆瓣小组话题，matters，telegraph，chinadigitaltimes，rfa。",
-        "vote": 1,
+        "vote": 2,
         "hash": "5c847e0c9321a8d3cf5eea7fa234c28f"
     },
     {
         "repo": "https://github.com/NodeBE4/opinion",
         "desc": "聚合以社会、政治话题为主的文章和社交媒体上优秀Up主的评论 ",
-        "vote": 1,
+        "vote": 2,
         "hash": "184dc00d00fae28d0efdc9b5c7b7f98d"
+    },
+    {
+        "repo": "https://github.com/chinatimeline/chinatimeline.github.io",
+        "desc": "中国社会与政治事件时间线展示和新闻事件提交网站",
+        "vote": 1,
+        "hash": "1319f5423520b333172ca83acf013b13"
     }
 ]
