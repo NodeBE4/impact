@@ -171,7 +171,7 @@
         "repo": "https://github.com/ibeidou/ibeidou-articles",
         "desc": "北斗全集",
         "hash": "a291ecae7e0958c207c935337cb266fb",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/howardrotterdam/backup-1984bbs",
@@ -220,5 +220,17 @@
         "desc": "lihkg-backup json 格式数据备份",
         "hash": "fec52c4888189fc422381271f9dd34a2",
         "vote": 1
+    },
+    {
+        "repo": "https://github.com/duty-machine/duty-machine",
+        "desc": "一个备份网络文章的服务。当前支持的网站有：微信公众平台，微博文章，知乎专栏，豆瓣日记，豆瓣小组话题，matters，telegraph，chinadigitaltimes，rfa。\n\n  ",
+        "vote": 1,
+        "hash": "5c847e0c9321a8d3cf5eea7fa234c28f"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/opinion",
+        "desc": "聚合以社会、政治话题为主的文章和社交媒体上优秀Up主的评论\n\n  ",
+        "vote": 1,
+        "hash": "184dc00d00fae28d0efdc9b5c7b7f98d"
     }
 ]
