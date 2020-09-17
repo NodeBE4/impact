@@ -316,5 +316,11 @@
         "desc": "中华人民共和国宪法",
         "vote": 1,
         "hash": "31ae7b6c6132e78e020a3ff08e0320c7"
+    },
+    {
+        "repo": "https://github.com/Gnothi-Seauton/COVID-19-timeline",
+        "desc": "记录自2019年12月起武汉新冠肺炎疫情进展的时间线。",
+        "vote": 1,
+        "hash": "85b7b1ef7faebb0ad328110c53404b8a"
     }
 ]
