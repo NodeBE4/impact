@@ -262,5 +262,17 @@
         "desc": "北大未名BBS备份",
         "vote": 1,
         "hash": "921014bb2531a96104e179a7b27511f2"
+    },
+    {
+        "repo": "https://github.com/ctf-db/onechildpolicy",
+        "desc": "One Child Policy 相关书影音",
+        "vote": 1,
+        "hash": "1cd5ecacfc3b39028aa7d394bd26fe1e"
+    },
+    {
+        "repo": "https://github.com/CNwoman-bot/evil-man",
+        "desc": "Evil Man - 中国男性之恶",
+        "vote": 1,
+        "hash": "f9ec80d4982592c680ce893bd17287c6"
     }
 ]
