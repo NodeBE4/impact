@@ -135,13 +135,13 @@
         "repo": "https://github.com/2049bbs/2049bbs.github.io",
         "desc": "2049BBS 镜像站，每15分钟更新",
         "hash": "3be5bf7a348aaf82c12c15daa3f73028",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/speechfree/letscorp",
         "desc": "墙外楼镜像站",
         "hash": "06cbaf93d15350d668d66d0e8454d13f",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/china-digital-times/china-digital-times.github.io",
