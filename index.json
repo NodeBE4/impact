@@ -21,7 +21,7 @@
         "repo": "https://github.com/996icu/996.ICU",
         "desc": "996.ICU",
         "hash": "8892e4153a89c495b34511d1ab45c850",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/fuckcqcs/fuckcqcs",
@@ -286,5 +286,11 @@
         "desc": "一个关于数字隐私搜集、保护、清理集一体的方案,外加开源信息收集(OSINT)对抗 (长期更新)",
         "vote": 1,
         "hash": "52c0849551d8b8c3f13e3f58afef72fc"
+    },
+    {
+        "repo": "https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo",
+        "desc": "学习强国 懒人刷分工具 自动学习",
+        "vote": 1,
+        "hash": "4982f68bfa87c1c757798a220011f459"
     }
 ]
