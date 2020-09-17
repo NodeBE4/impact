@@ -121,7 +121,7 @@ async function performTasks() {
                 owner: OWNER,
                 repo: REPO,
                 issue_number: issue.number,
-                body: page
+                body: `已成功添加 ${repo}`
               })
               await octokit.issues.update({
                 owner: OWNER,
