@@ -1,0 +1,198 @@
+
+    <link rel="stylesheet" href="https://nodebe4.github.io/hero/assets/css/font-awesome-color-brand.css"  type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+    <style>
+    .fa-m:before {
+        font-family: Arial; /* your font family here! */
+        font-weight: bold;
+        content: 'M';
+    }
+
+    .thumb-post img {
+      object-fit: cover; 
+      object-position: top; 
+      width: 40px;
+      overflow: hidden;
+      height: 40px;
+      display: inline;
+    }
+    </style>
+
+
+<div id="noscript-content"  class="text-center">
+  <p class="text-center">什么都不必说，我知道我明了</p>
+  <p class="text-center">他们说Javascript是万恶之源</p>
+  <p class="text-center"><b>但是</b>，真正的安全只有靠Tor, 去装个<a href="https://www.torproject.org/download/">Tor Browser</a>或<a href="https://www.privacytools.io/operating-systems/#tor_os">双虚拟机</a>吧</p>
+  <p class="text-center">因为<a href="https://github.com/diymysite/analytics/blob/master/pages/analytics.md">除了恶意网页插件，还有一万种方法监视你</a>.</p>
+  <p class="text-center">缺少javascript的世界是残缺的，就像没有英雄的世界</p>
+  <p class="text-center"><b>当然</b>，你可以直接阅读<a href="https://raw.githubusercontent.com/NodeBE4/hero/master/index.json">原始数据</a>或者网页代码</p>
+  <p class="text-center"><i>Javascript is the most beautiful language.</i></p>
+  <p class="text-center"><i>BITE ME</i></p>
+</div>
+
+<table id="hero-table-main" class="table table-striped table-bordered table-sm" style="width:100%;">
+
+</table>
+<div style="font-size: 12px">
+  <span style="color: #3498DB;"><i>"赞不会立即生效，每小时或創建新人物時更新一次"</i></span>; 
+  <span style="color: #3498DB;"><i>"头像会有的"</i></span>; 
+  Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</div>
+
+<hr>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <h4>请在此处键入你心中的英雄</h4>
+    <span style="color: #3498DB;width:100%; font-size:14px">HeroBot會搞定剩下的一切...</span>
+    <p style="color: #566573;font-size: 12px;">提示：提交或投票成功或需approve批准no script弹出的警告。</p>
+    <form id="add-hero-form" action="https://hero-form.vercel.app/api/submit" method="post" target="_blank">
+      <div class="form-group">
+          <input name="name" type="text" placeholder="姓名 如:李文亮、陈玫" style="display:table-cell; width:100%; max-width: 600px;">
+          <input name="keyword" type="text" placeholder="最关键词 (以区分同名同姓者) 如:医生、端点星" style="display:table-cell; width:100%; max-width: 600px;">
+          <input name="url" type="url" placeholder="维基百科链接 https://zh.wikipedia.org/..." style="display:table-cell; width:100%; max-width: 600px;"><br>
+        <textarea name="message" style="width: 100%; max-width: 600px; height: 100px;" placeholder="随便说点什么，HeroBot看不见但人类能看到..."></textarea>
+        <div><input type="submit" value="提交"/></div>
+      </div>
+    </form>
+  </div>
+  <div class="col-12 col-md-6">
+    <h4>關於</h4>
+    <div id="about-hero">
+      <p><b>說明：</b>本榜由運行於<a href="https://github.com/nodebe4/hero">Github</a>的HeroBot根據提交的人物資訊自動从<a href="https://zh.wikipedia.org/">维基</a>、<a href="https://www.google.com">Google</a>和<a href="https://nodebe4.github.io/">BE4資料庫</a>中搜索人物的頭像、介紹、相關言論和新聞生成個人主頁和網路影响力分數。參考原始<a href="https://nodebe4.github.io/hero/index.json">數據</a>及其<a href="https://github.com/NodeBE4/hero/">產生方式</a>。</p>
+      <p><b>參與：</b>歡迎有才華的您貢獻您的想法、代碼、或藝術設計，相關討論見<a href="https://github.com/NodeBE4/hero/issues/1">issue</a>或<a href="https://2047.name/t/7158">這裏</a>。<i style="color: #FF445D">歡迎友站host本頁鏡像(見:<a href="https://github.com/NodeBE4/hero">方法</a>與<a href="https://hero-form.vercel.app/">示例</a>).</i></p>
+      <p style="color: #803030;"><b>隱私：</b>人物<i>提交</i>或<i>点赞</i><i class="fa fa-thumbs-o-up"></i>无需注册或登录，英雄榜无法獲知您的IP地址或浏览器指纹等隐私。</p>
+      <p style="font-size: 12px;"><b>開源：</b>英雄榜的API开放<a href="https://github.com/NodeBE4/hero-form">源代码</a>且实际部署經第三方API託管平台<a href="https://vercel.com">vercel</a>所<a href="https://github.com/NodeBE4/hero-form/commits/master">验证</a>.</p>
+      <div style="font-size:12px">License: GPL-3.0-or-later</div>
+    </div>
+  </div>
+</div>
+
+<div style="display:none">
+   <iframe id="iframe-vote" src="https://hero-form.vercel.app/vote.html"></iframe>
+</div>
+
+<script type="text/javascript" >
+
+document.addEventListener("DOMContentLoaded", function(event){
+  var url = "https://raw.githubusercontent.com/NodeBE4/hero/master/index.json";
+  var id = "hero-table-main";
+  const thead_format = {
+    'vote': '<i style="color:#2980B9" class="fa fa-thumbs-up"></i>',
+    'people': '<span><b>人物</b></span>',
+    'google': '<i class="fa fa-google google" title="Google"></i>',
+    'twitter': '<i class="fa fa-twitter twitter" title="Twitter"></i>',
+    'ytb': '<i class="fa fa-youtube youtube" title="YouTube"></i>',
+    'reddit': '<i class="fa fa-reddit reddit" title="reddit.com"></i>',
+    'medium': '<i class="fa fa-medium medium" title="medium.com"></i>',
+    'matters': '<i class="fa fa-m" title="matters.news"></i>',
+  }
+  var noscript = document.getElementById("noscript-content");
+  noscript.parentNode.removeChild(noscript)
+  $.getJSON(url, function(json) {
+    herolist = json;
+
+    var table = document.getElementById(id);
+    var thead = document.createElement('thead');
+    var tbody = document.createElement('tbody');
+    var tfoot = document.createElement('tfoot');
+    table.appendChild(thead)
+    table.appendChild(tbody)
+    table.appendChild(tfoot)
+    var tr0 = document.createElement('tr');
+    thead.appendChild(tr0);
+    var thead_vals = Object.values(thead_format)
+    var thead_keys = Object.keys(thead_format)
+    thead_vals.map(item => {
+      var th = document.createElement('th')
+      th.innerHTML = item
+      tr0.appendChild(th)
+    });
+
+    var lis = herolist.map(item => {
+      let tr = document.createElement('tr');
+      tbody.appendChild(tr)
+      thead_keys.map(key => {
+        let td1 = document.createElement('td');
+        if (key == 'people'){
+          if (item['imgur']){
+            let temps = item['imgur'].split('.')
+            temps[temps.length-2] += 's'
+            let thumbnail = temps.join('.')
+            td1.innerHTML += `<a class="thumb-post" href="https://nodebe4.github.io/hero/${item['people']}"><img src="${thumbnail}"></img></a>`
+          // }else if (item['photo']){
+          //   td1.innerHTML += `<a class="thumb-post"><img src="${item['photo']}" ></img></a>`
+          }else{
+            td1.innerHTML += `<a class="thumb-post" href="https://nodebe4.github.io/hero/${item['people']}"><img src="https://nodebe4.github.io/hero/assets/images/avatar.png"></img></a>`            
+          }
+          td1.innerHTML += `<a href="https://nodebe4.github.io/hero/${item[key]}"><b>${item[key]}</b></a>`;
+          if (item['keyword']!==""){
+            td1.innerHTML += `<i style="font-size:0.8em">   (${item['keyword']})</i>`;
+          }
+        }else if(key=='vote'){
+          let val = item[key] || 0
+          td1.innerHTML += val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          td1.innerHTML += `<a id="vote-${item.hash}" onclick="vote_hero('${item.hash}')" style="color:#2980B9"> <i class="fa fa-thumbs-o-up"></i></a>`
+          td1.id = "vote-cnt-"+item.hash
+        }else{
+          let val = item[key] || 0
+          td1.innerHTML = `<i style="font-size: 12px;">${val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</i>`
+        }
+        tr.appendChild(td1);
+      });
+    });
+
+    var tr2 = document.createElement('tr');
+    tfoot.appendChild(tr2);
+    thead_vals.map(item => {
+      var th = document.createElement('th')
+      th.setAttribute("data-field", item)
+      th.innerHTML = item
+      tr2.appendChild(th)
+    });
+    $('#hero-table-main').DataTable( {
+        "order": [[ 2, "desc" ]],
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Chinese.json"
+        }
+    });
+    console.log(table)
+  })
+});
+
+var iframe = document.getElementById("iframe-vote");
+
+iframe.contentWindow.document.addEventListener("DOMContentLoaded", function(event){
+  var voteform = iframe.contentWindow.document.getElementById("vote-form");
+
+  voteform.addEventListener('submit', function(event){
+    event.preventDefault(); 
+  });
+})
+
+
+function vote_hero(hash){
+  console.log(hash)
+  var btn = document.getElementById("vote-"+hash)
+  var cell = document.getElementById("vote-cnt-"+hash)
+  var count = parseInt(cell.innerText) + 1
+  btn.parentNode.removeChild(btn)
+  console.log(count)
+  cell.innerText = count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  // var form = document.getElementById("vote-form")
+  var form = iframe.contentWindow.document.getElementById("vote-form");
+  var inputhash = iframe.contentWindow.document.getElementById("input-hash")
+  inputhash.value=hash
+  form.submit()
+  // sendData(form)
+  setTimeout(function(){ iframe.contentWindow.location.reload(); }, 3000)
+  return false
+}
+
+</script>

@@ -1,0 +1,19 @@
+
+  <!-- Html Elements for Search -->
+
+  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{site.baseurl}}/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><a class="tag">{author}</a></li>',
+    noResultsText: '没找到',
+    limit: 50,
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+
+  </script>

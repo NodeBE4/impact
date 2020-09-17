@@ -1,0 +1,17 @@
+_site
+build
+_algolia_api_key
+.DS_Store
+.jekyll
+.jekyll-metadata
+.jekyll-cache
+.bundle
+.sass-cache
+.ipynb_checkpoints
+node_modules
+Gemfile.lock
+*.ipynb
+*.py
+*.sh
+_posts_sample
+.env

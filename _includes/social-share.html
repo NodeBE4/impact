@@ -1,0 +1,19 @@
+<!-- Left & centered positioning -->
+{% if page.from %}
+  {% assign shareurl = site.url | append: site.baseurl | append: page.url %}
+  {% assign sharetitle = page.title %}
+{% else %}
+  {% assign shareurl = site.url | append: site.baseurl | append: page.url %}
+  {% assign sharetitle = site.name | append: '-' | append: site.description %}
+{% endif %}
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/{{ shareurl | url_encode }}" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u={{ shareurl }}" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url={{ shareurl }}&text={{ sharetitle }}&hashtags={{ site.name }}" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url={{ shareurl }}&title={{ sharetitle }}" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ shareurl }}&title={{sharetitle}}" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject={{ sharetitle }}&body={{ page.excerpt | strip_html }}" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url={{ shareurl }}" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{ shareurl }}&title={{ sharetitle }}&caption={{ page.excerpt | strip_html }}&tags={{ site.name }}" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text={{ sharetitle }}&url={{ shareurl }}" class="ssk ssk-buffer"></a>
+</div>

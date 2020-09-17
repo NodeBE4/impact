@@ -1,0 +1,32 @@
+---
+layout: page
+title: 他們
+permalink: /categories/
+---
+
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+<div class="tags">
+  <ul class="label">
+  {% for tag in site.categories %}
+      {% assign counter = 0 %}
+      {% for post in tag[1] %}
+        {% if post.title != null and counter < 2 %}
+    <li>
+    {% if post.link %}
+      <a href="{{ post.link }}">
+    {% else %}
+      <a href="{{ site.baseurl }}{{ post.url }}">
+    {% endif %}
+        <span>{{ tag[0] }}</span>
+      </a>
+    </li>
+          {% assign counter = counter | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+  {% endfor %}
+  </ul>
+
+</div>

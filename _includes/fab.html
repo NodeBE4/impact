@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    {% if paginator.previous_page_path %}
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+      <i>上</i>
+    </a>
+    {% endif %}
+    {% if paginator.next_page_path %}
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="{{ site.baseurl}}{{ paginator.next_page_path }}">
+      <i>下</i>
+    </a>
+    {% endif %}
+    {% if page.previous %}
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+      <i>后</i>
+    </a>
+    {% endif %}
+    {% if page.next %}
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+      <i>前</i>
+    </a>
+    {% endif %}
+    {% if post_tag_m1 %}
+    <a class="fab-action fab-action-3" title="<{{ page.categories.last }}>上一篇(热键 ins)" href="{{ site.url }}{{ site.baseurl }}{{ post_tag_m1.url }}">
+      <i>左</i>
+    </a>
+    {% endif %}
+    {% if post_tag_p1 %}
+    <a class="fab-action fab-action-4" title="<{{ page.categories.last }}>下一篇(热键 del)" href="{{ site.url }}{{ site.baseurl }}{{ post_tag_p1.url }}">
+      <i>右</i>
+    </a>
+    {% endif %}
+  </div>
+</div>

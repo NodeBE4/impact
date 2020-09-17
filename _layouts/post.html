@@ -1,0 +1,162 @@
+---
+layout: default
+---
+
+{% assign post_tag_m2 = false %}
+{% assign post_tag_m1 = false %}
+{% assign post_tag_p2 = false %}
+{% assign post_tag_p1 = false %}
+
+{% assign tag = page.categories.last %}
+{% assign tag_posts = site.categories[tag] %}
+{% for post in tag_posts %}
+  {% if post.url == page.url %}
+    {% break %}
+  {% endif %}
+  {% assign post_tag_m2 = post_tag_m1 %}
+  {% assign post_tag_m1 = post %}
+{% endfor %}
+{% assign tag_posts = site.categories[tag] | reverse %}
+{% for post in tag_posts %}
+  {% if post.url == page.url %}
+    {% break %}
+  {% endif %}
+  {% assign post_tag_p2 = post_tag_p1 %}
+  {% assign post_tag_p1 = post %}
+{% endfor %}
+
+
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <!-- Look the author details up from the site config. -->
+  {% assign author = site.data.authors[page.author] %}
+
+  <div>
+    <span class="date">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </span>
+
+    <!-- Output author details if some exist. -->
+    {% if author %}
+        <span>
+            <!-- Personal Info. -->
+            <a href="{{ author.web }}" style="font-size:14px;">作者: {{ author.name }}</a>
+        </span>
+    {% else %}
+      {% if page.categories.last != page.author %}
+        <span>
+            <!-- Personal Info. -->
+            <a  style="font-size:14px;">作者: {{ page.author }}</a>
+        </span>
+      {% endif %}
+    {% endif %}
+
+
+    <ul class="tag">
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/categories/#{{ page.categories.last }}">
+          {{ page.categories.last }}
+        </a>
+      </li>
+    </ul>
+
+    {% if page.from %}
+        <span>
+            <!-- Personal Info. -->
+            <a href="{{ page.from }}" style="font-size:14px;">维基百科链接</a>
+        </span>
+    {% endif %}
+
+    <span style="float: right;" title="{{ page.tags[0] }}的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#{{ page.categories.last }} 的其它文章</a>
+    </span>
+
+  </div>
+
+  <div class="entry">
+    {% capture video_id %}{{ page.from | replace: "https://www.youtube.com/watch?v=",'' |  replace: "https://youtu.be/", '' }}{% endcapture %}
+    {% if video_id contains "http://" or video_id contains "https://" %}
+    {% else %}
+      <iframe id="player-{{ video_id }}" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
+    {% endif %}
+    {% if page.photo %}
+    <img src="{{ page.photo }}" alt="{{ page.title }}的照片" align="right" style="max-width: 200px;"/>
+    {% endif %}
+    {{ content }}
+  </div>
+
+  {% include copyright.html %}
+
+  <div id="sametag">
+    <h4 style="display: inline-block;">#{{ page.categories.last }} 的其它文章</h4>
+    <span>--<a href="{{ site.url }}{{ site.baseurl }}{{ site.categories[tag].first.url }}">最新</a>-</span>
+    <span>-<a href="{{ site.url }}{{ site.baseurl }}{{ site.categories[tag].last.url }}">最早</a>--</span>
+    {% if post_tag_m2.url %}
+      <li>
+        <time>{{ post_tag_m2.date | date: "%Y-%m-%d" }}</time>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post_tag_m2.url }}">
+          {{ post_tag_m2.title }}
+        </a>
+      </li>
+    {% endif %}
+    {% if post_tag_m1.url %}
+      <li>
+        <time>{{ post_tag_m1.date | date: "%Y-%m-%d" }}</time>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post_tag_m1.url }}">
+          {{ post_tag_m1.title }}
+        </a>
+      </li>
+    {% endif %}
+    {% if post_tag_p1.url %}
+      <li>
+        <time>{{ post_tag_p1.date | date: "%Y-%m-%d" }}</time>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post_tag_p1.url }}">
+          {{ post_tag_p1.title }}
+        </a>
+      </li>
+    {% endif %}
+    {% if post_tag_p2.url %}
+      <li>
+        <time>{{ post_tag_p2.date | date: "%Y-%m-%d" }}</time>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post_tag_p2.url }}">
+          {{ post_tag_p2.title }}
+        </a>
+      </li>
+    {% endif %}
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    {% if page.previous.url %}
+      <span class="prev" >
+          <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+            前一篇：{{ page.previous.title }}
+          </a>
+      </span>
+    {% endif %}
+    {% if page.next.url %}
+      <span class="next" >
+          <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+            後一篇：{{ page.next.title }}
+          </a>
+      </span>
+    {% endif %}
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = '{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}'; } // left arrow key
+      if (e.keyCode == '39') { window.location = '{{ site.url }}{{ site.baseurl }}{{ page.next.url }}'; } // right arrow key
+      if (e.keyCode == '45') { window.location = '{{ site.url }}{{ site.baseurl }}{{ post_tag_m1.url }}'; } // insert key
+      if (e.keyCode == '46') { window.location = '{{ site.url }}{{ site.baseurl }}{{ post_tag_p1.url }}'; } // delete key
+    };
+    </script>
+    {% include fab.html %}
+
+  </div>
+
+
+  {% include disqus.html %}
+</article>

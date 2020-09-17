@@ -1,0 +1,110 @@
+---
+layout: default
+permalink: /list
+---
+
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+{% if paginator.page == 1 %}
+<div class="tags wrapper-masthead">
+  <ul class="label">
+    {% for tag in site.categories %}
+    <li>
+      <a href="{{ site.baseurl }}/categories/#{{ tag[0] }}">
+        <span>{{ tag[0] }}</span>
+        <span class="count">{{ tag[1] | size }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<ul class="archive">
+  {% for post in paginator.posts %}
+  {% unless post.next %}
+    {% assign today = site.time | date: '%Y年%m月' %}
+    {% capture month %}{{ post.date | date: '%Y年%m月' }}{% endcapture %}
+    {% if month != today %}
+      <h2>{{ month }}</h2>
+    {% endif %}
+  {% else %}
+    {% capture month %}{{ post.date | date: '%m' }}{% endcapture %}
+    {% capture nmonth %}{{ post.next.date | date: '%m' }}{% endcapture %}
+    {% if month != nmonth %}
+      <h2>{{ post.date | date: '%Y年%m月' }}</h2>
+    {% endif %}
+  {% endunless %}
+    <li>
+      {% if post.link %}
+      <a href="{{ post.link }}">
+      {% else %}
+      <a href="{{ site.baseurl }}{{ post.url }}">
+      {% endif %}
+        {{ post.title }}
+      </a>
+      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+
+      <!-- Look the author details up from the site config. -->
+      {% assign author = site.data.authors[post.author] %}
+
+      {% if author %}
+          <span>
+              <!-- Personal Info. -->
+              <a href="{{ author.web }}"  style="font-size:14px;">作者: {{ author.name }}</a>
+          </span>
+      {% else %}
+        {% for tag in post.tags %}
+        {% if tag != post.author %}
+          <span>
+              <!-- Personal Info. -->
+              <a  style="font-size:14px;">作者: {{ post.author }}</a>
+          </span>
+        {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if post.categories %}
+      <a href="{{ site.url }}{{ site.baseurl }}/categories/#{{ post.categories.last }}" class="tag">
+        {{ post.categories.last }}
+      </a>
+      {% endif %}
+
+      {% if post.from %}
+      <a href="{{ post.from }}" style="font-size:14px;">原文</a>
+      {% endif %}
+
+    </li>
+  {% endfor %}
+
+</ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        上一页
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+        下一页
+      </a>
+    </span>
+  {% endif %}
+
+  {% include fab.html %}
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '{{ site.baseurl }}{{ paginator.previous_page_path }}'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '{{ site.baseurl}}{{ paginator.next_page_path }}'; } // right arrow key
+  };
+  </script>
+
+</div>

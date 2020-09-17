@@ -1,0 +1,39 @@
+name: issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v2-beta
+      with:
+        node-version: '14'
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: handle issues
+      env:
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPOSITORY: ${{ secrets.REPOSITORY }}
+      run: |
+        npm install
+        node action.js
+        git config --local user.email "you@example.com"
+        git config --local user.name "hero bot"
+        git config pull.rebase false
+        git add .
+        git commit -m 'add new hero'
+        git pull
+        git push origin master
+

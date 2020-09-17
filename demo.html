@@ -1,0 +1,76 @@
+---
+layout: default
+permalinl: /demo
+---
+
+<script src="{{ site.baseurl }}/assets/js/hero.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<div id="news">
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+</div>
+
+<div id="list">
+	<h1>英雄榜</h1>
+	<ul id="list-container" style="color: #2980B9;"></ul>
+</div>
+
+<div id="post">
+	<h1 id="heroname">演示页</h1>
+	<div id="article"></div>
+	<h3>最近动态</h3>
+  	<ul id="news-container" class="searched" style="color: #2980B9;"></ul>
+
+</div>
+
+<h4>说明</h4>
+<div id="explain">
+<p>本页由js动态生成，目前僅用於功能演示。</p>
+<p>人物列表存放於<a href="https://nodebe4.github.io/hero/index.json">https://nodebe4.github.io/hero/index.json</a></p>
+<p>點擊人物列表中的名字或加载按钮可展開其詳細介紹和近期相關新聞報道。人物介绍由函数loadWikipedia从预设的Wikipedia网址动态加载，最新动态里的新闻由SimpleJekyllSearch从<a href="https://nodebe4.github.io/waimei/search.json">https://nodebe4.github.io/waimei/search.json</a>中按照人物名字搜索返回。根据你的网络情况，页面内容加载时间大概需3-8秒，如最近动态显示没找到，可刷新网页。</p>
+<p>關於本項目的規劃目標以及更多討論見這裏<a href="https://2047.name/t/7158">https://2047.name/t/7158</a>。項目最終希望實現匿名互動功能，能對英雄點贊，甚至能留言評論，需要有人幫忙寫API，API計劃部署到<a href="https://vercel.com">vercel</a>(參考<a href="https://github.com/duty-machine/duty-machine/">duty-machine項目</a>), 歡迎大家幫忙寫api網頁前端js, css.</p>
+</div>
+
+
+{% include simple-search.html %}
+
+<!-- Configuration -->
+<script type="text/javascript" >
+
+document.addEventListener("DOMContentLoaded", function(event){
+  var url = "{{ site.baseurl }}/index.json";
+  var id = "list-container";
+  var el = document.getElementById(id);
+  $.getJSON(url, function(json) {
+    herolist = json;
+    var lis = herolist.map(item => {
+      let li = document.createElement('li');
+      let s1 = document.createElement('span');
+      // s1.innerHTML = `<a onclick="expandHero('${item['people']}','${item['wiki']}');">${item['people']}</a>`;
+      s1.innerHTML = `<a href="{{ site.baseurl }}/${item['people']}">${item['people']}</a>`;
+      li.appendChild(s1);
+      let s2 = document.createElement('span');
+      s2.innerHTML = ' '+item['vote']+'贊';
+      s2.classList.add("tag");
+      let a1 = document.createElement('a');
+      a1.href= item['wiki'];
+      a1.innerText = 'wikipedia';
+      a1.classList.add("tag");
+      li.appendChild(a1);
+      li.appendChild(s2);
+      let s3 = document.createElement('span');
+      s3.innerHTML = `<a class="tag" onclick="expandHero('${item['people']}','${item['wiki']}');">加载</a>`;
+      s3.classList.add("tag");
+      li.appendChild(s3);
+      el.appendChild(li);
+    });
+  })
+});
+
+function expandHero(people, wiki){
+  // setTimeout(function(){sjs.search(people);}, 6000);
+  var title = document.getElementById("heroname");
+  title.innerText=people;
+  loadWikipedia(wiki, "mw-content-text");
+  // sjs.search(people);
+}
+</script>

@@ -1,0 +1,193 @@
+---
+layout: default
+comments: true
+---
+
+
+<script src="{{ site.baseurl }}/assets/js/hero.js"></script>
+
+<div id="news">
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+</div>
+
+<div id="noscript-content"  class="text-center">
+  <h4 class="text-center">HeroBot说</h4>
+  <p class="text-center">什么都不必说，我知道我明了</p>
+  <p class="text-center">他们说Javascript是万恶之源</p>
+  <p class="text-center"><b>但是</b>，真正的安全只有靠Tor, 去装个<a href="https://www.torproject.org/download/">Tor Browser</a>或<a href="https://www.privacytools.io/operating-systems/#tor_os">双虚拟机</a>吧</p>
+  <p class="text-center">因为<a href="https://github.com/diymysite/analytics/blob/master/pages/analytics.md">除了恶意网页插件，还有一万种方法监视你</a>.</p>
+  <p class="text-center">缺少javascript的世界是残缺的，就像没有英雄的世界</p>
+  <p class="text-center"><b>当然</b>，你可以直接阅读<a href="https://raw.githubusercontent.com/NodeBE4/hero/master/index.json">原始数据</a>或者网页代码</p>
+  <p class="text-center"><i>Javascript is the most beautiful language.</i></p>
+  <p class="text-center"><i>BITE ME</i></p>
+</div>
+
+<table id="add-hero-form" class="table table-striped table-bordered table-sm" style="width:100%;">
+</table>
+<div style="font-size: 12px">
+  <span style="color: #3498DB;"><i>"赞不会立即生效，每小时或創建新人物時更新一次"</i></span>; 
+  <span style="color: #3498DB;"><i>"头像会有的"</i></span>; 
+  Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</div>
+
+<hr>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <h4>请在此处键入你喜歡的影響力項目</h4>
+    <span style="color: #3498DB;width:100%; font-size:14px">HeroBot會搞定剩下的一切...</span>
+    <p style="color: #566573;font-size: 12px;">提示：提交或投票成功或需approve批准no script弹出的警告。</p>
+    <form id="add-hero-form" action="https://hero-form.vercel.app/api/submit" method="post" target="_blank">
+      <div class="form-group">
+          <input name="url" type="url" placeholder="開源repo链接 https://github.com/..." style="display:table-cell; width:100%; max-width: 600px;"><br>
+        <textarea name="message" style="width: 100%; max-width: 600px; height: 100px;" placeholder="項目描述..."></textarea>
+        <div><input type="submit" value="提交"/></div>
+      </div>
+    </form>
+  </div>
+  <div class="col-12 col-md-6">
+    <h4>關於</h4>
+    <div id="about-hero">
+      <p><b>說明：</b>本榜來自端點星的<a href="https://github.com/Terminus2049/Awesome-Social-Impact">Awesome-Social-Impact</a>，歡迎查看原始<a href="https://nodebe4.github.io/impact/index.json">數據</a>及<a href="https://github.com/NodeBE4/impact/">代碼</a>。</p>
+      <p><b>參與：</b>歡迎有才華的您貢獻您的想法、代碼、或藝術設計，相關討論見<a href="https://github.com/NodeBE4/hero/issues/1">issue</a>或<a href="https://2047.name/t/7158">這裏</a>。<i style="color: #FF445D">歡迎友站host本頁鏡像(見:<a href="https://github.com/NodeBE4/hero">方法</a>與<a href="https://hero-form.vercel.app/">示例</a>).</i></p>
+      <p style="color: #803030;"><b>隱私：</b>人物<i>提交</i>或<i>点赞</i><i class="fa fa-thumbs-o-up"></i>无需注册或登录，英雄榜无法獲知您的IP地址或浏览器指纹等隐私。</p>
+      <p style="font-size: 12px;"><b>開源：</b>英雄榜的API开放<a href="https://github.com/NodeBE4/hero-form">源代码</a>且实际部署經第三方API託管平台<a href="https://vercel.com">vercel</a>所<a href="https://github.com/NodeBE4/hero-form/commits/master">验证</a>.</p>
+      <div style="font-size:12px">License: GPL-3.0-or-later</div>
+    </div>    
+  </div>
+
+</div>
+{% include simple-search.html %}
+
+<div style="display:none">
+  <iframe id="iframe-vote" src="{{ site.baseurl }}/vote"></iframe>
+</div>
+
+{% include disqus.html %}
+
+<script type="text/javascript" >
+// $(document).ready(function() {
+//     $('#add-hero-form').DataTable();
+// } );
+
+document.addEventListener("DOMContentLoaded", function(event){
+  var url = "{{ site.baseurl }}/index.json";
+  var id = "add-hero-form";
+  var table = document.getElementById(id);
+  var noscript = document.getElementById("noscript-content");
+  noscript.parentNode.removeChild(noscript)
+  const thead_format = {
+    'vote': '<i style="color:#2980B9" class="fa fa-thumbs-up"></i>',
+    'repo': '<span><b>仓库</b></span>',
+    'author': '<span><b>作者</b></span>',
+    'desc': '<span><b>描述</b></span>',
+    'update': '<i class="fa fa-history" title="last commit time"></i>',
+    'star': '<i class="fa fa-star github" title="stars on github"></i>',
+  }
+  $.getJSON(url, function(json) {
+    herolist = json;
+
+    var thead = document.createElement('thead');
+    var tbody = document.createElement('tbody');
+    var tfoot = document.createElement('tfoot');
+    table.appendChild(thead)
+    table.appendChild(tbody)
+    table.appendChild(tfoot)
+    var tr0 = document.createElement('tr');
+    thead.appendChild(tr0);
+    var thead_vals = Object.values(thead_format)
+    var thead_keys = Object.keys(thead_format)
+    thead_vals.map(item => {
+      var th = document.createElement('th')
+      th.innerHTML = item
+      tr0.appendChild(th)
+    });
+
+    var lis = herolist.map(item => {
+      let texts = item['repo'].split('/')
+      let origin = texts[2]
+      let author = texts[3]
+      let reponame = texts[4]
+      let authorlink = texts.slice(0,4).join('/')
+      let host = origin.split('.')[0]
+
+      let tr = document.createElement('tr');
+      tbody.appendChild(tr)
+      thead_keys.map(key => {
+        let td1 = document.createElement('td');
+        if (key == 'repo'){
+          if (origin=='github.com'){
+            td1.innerHTML += `<a class="thumb-post" href="${item['repo']}"><i class="fa fa-github github"></i></a>`
+          }else if (origin=='gitlab.com'){
+            td1.innerHTML += `<a class="thumb-post" href="${item['repo']}"><i class="fa fa-gitlab gitlab"></i></a>`
+          }
+          td1.innerHTML += `<a href="${item['repo']}"><b style="font-size: 12px;">${reponame}</b></a>`;
+        }else if(key=='vote'){
+          let val = item[key] || 0
+          td1.innerHTML += val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          td1.innerHTML += `<a id="vote-${item.hash}" onclick="vote_hero('${item.hash}')" style="color:#2980B9"> <i class="fa fa-thumbs-o-up"></i></a>`
+          td1.id = "vote-cnt-"+item.hash
+        }else if (key == 'author'){
+          td1.innerHTML += `<a href="${authorlink}" style="font-size: 12px;">${author}</a>`
+        }else if (key=='update'){
+          let imglink = `https://img.shields.io/${host}/last-commit/${author}/${reponame}`
+          td1.innerHTML += `<a href="${item['repo']}"><img src="${imglink}"></img></a>`
+        }else if (key=='star'){
+          let imglink = `https://img.shields.io/${host}/stars/${author}/${reponame}`
+          td1.innerHTML += `<a href="${item['repo']}"><img src="${imglink}"></img></a>`
+        }else{
+          let val = item[key] || 0
+          td1.innerHTML = `<i style="font-size: 12px;">${val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</i>`
+        }
+        tr.appendChild(td1);
+      });
+    });
+
+    var tr2 = document.createElement('tr');
+    tfoot.appendChild(tr2);
+    thead_vals.map(item => {
+      var th = document.createElement('th')
+      th.setAttribute("data-field", item)
+      th.innerHTML = item
+      tr2.appendChild(th)
+    });
+    $('#add-hero-form').DataTable( {
+        "order": [[ 0, "desc" ]],
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Chinese.json"
+        }
+    });
+    console.log(table)
+  })
+});
+
+var iframe = document.getElementById("iframe-vote");
+
+iframe.contentWindow.document.addEventListener("DOMContentLoaded", function(event){
+  var voteform = iframe.contentWindow.document.getElementById("vote-form");
+
+  voteform.addEventListener('submit', function(event){
+    event.preventDefault(); 
+  });
+})
+
+
+function vote_hero(hash){
+  console.log(hash)
+  var btn = document.getElementById("vote-"+hash)
+  var cell = document.getElementById("vote-cnt-"+hash)
+  var count = parseInt(cell.innerText) + 1
+  btn.parentNode.removeChild(btn)
+  console.log(count)
+  cell.innerText = count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  // var form = document.getElementById("vote-form")
+  var form = iframe.contentWindow.document.getElementById("vote-form");
+  var inputhash = iframe.contentWindow.document.getElementById("input-hash")
+  inputhash.value=hash
+  form.submit()
+  // sendData(form)
+  setTimeout(function(){ iframe.contentWindow.location.reload(); }, 3000)
+  return false
+}
+
+
+</script>
