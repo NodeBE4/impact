@@ -21,30 +21,24 @@ async function perform() {
   // console.log(heroes)
 
   await Promise.all(heroes.map(async (item) =>{
+    let hash = crypto.createHash('md5').update(item.repo).digest("hex")
+    if (item.hash){
+      console.log(item)
+    }else{
+      item['hash'] = hash
+    }
     let votefile = `_data/votes/vote_${item.hash}`;
     if (fs.existsSync(votefile)) {
       text = fs.readFileSync(votefile)
       item.vote = parseInt(text)
-    }
-    if (('photo' in item)==false || (typeof(item.photo)!=='string')){
-      item.photo = await googlePhoto(item.people + item.keyword + ' 简介')
-      new Promise(resolve => setTimeout(resolve, 2000))
-    }else if (('imgur' in item)==false) {
-      // https://www.npmjs.com/package/imgur
-      // upload photo to imgur
-      // item.imgur = 'imgur image id'
-      console.log(item.photo)
+    }else{
+      item['vote'] = 1
     }
   }))
   let content = JSON.stringify(heroes, undefined, 4)
   fs.writeFileSync(`./index.json`, content)
   
-  await loadRefSites()
 
-  await Promise.all(heroes.map(async (item) => {
-    let intro = await loadWikipedia(item.wiki, "mw-content-text")
-    generateArticle(item, intro)
-  }));
 }
 
 function timeConverter(UNIX_timestamp){
