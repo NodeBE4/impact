@@ -31,13 +31,11 @@ async function performTasks() {
 
   let promises = data.map(async (issue) => {
     try {
-      if (issue.title.substring(0,12)=='add_request:'){
-        let titletext = issue.title.split(" ")[1]
-        let people = titletext.split("-")[0].trim()
-        let keyword = titletext.replace(people,'').replace("-",'')
-        let wiki = issue.body.split('\n')[0]
-        let match = /^https:\/\/(zh|en).wikipedia.org\/wiki\//
-        if (match.test(wiki)){
+      if (issue.title.substring(0,11)=='add_request'){
+        let repo = issue.body.split('\n')[0]
+        let desc = issue.body.split('---描述---\n')[1]
+        let match = /^https:\/\/(github|gitlab).com\//
+        if (match.test(repo)){
             // let rawfile = await octokit.repos.getContent({
             //                 owner: OWNER,
             //                 repo: REPO,
@@ -51,14 +49,14 @@ async function performTasks() {
             let text2 = fs.readFileSync('./blacklist.json', {encoding:'utf8', flag:'r'})
             let bjson = JSON.parse(text2)
             var topleader = bjson.filter(function (item) {
-                return item.wiki == wiki ;
+                return item.repo == repo ;
             }); 
             if (topleader.length > 0){
-              throw Error('英雄榜不接受现任国家元首，他们已经霸占了新闻头条。');
+              throw Error('這個項目在黑名單上。');
             }
-            let hash = crypto.createHash('md5').update(people+wiki).digest("hex")
+            let hash = crypto.createHash('md5').update(repo).digest("hex")
             var thisperson = json.filter(function (item) {
-                return item.wiki == wiki ;
+                return item.repo == repo ;
             }); 
             if (thisperson.length > 0){
               let votefile = `_data/votes/vote_${thisperson[0].hash}`
@@ -84,7 +82,7 @@ async function performTasks() {
                 owner: OWNER,
                 repo: REPO,
                 issue_number: issue.number,
-                body: `${thisperson[0].people} 已经榜上有名了，你对TA赞了一次，试试在网页上的搜索TA的名字`
+                body: `${thisperson[0].repo} 已经榜上有名了，你对TA赞了一次，试试在网页上的搜索TA的名字`
               })
               await octokit.issues.update({
                 owner: OWNER,
@@ -95,16 +93,12 @@ async function performTasks() {
                 labels: ['duplicated']
               })
             }else{
-              let photourl = await googlePhoto(people + keyword)
-              new Promise(resolve => setTimeout(resolve, 2000))
 
               let newhero = {
-                people: people,
-                keyword: keyword,
-                wiki: wiki,
+                repo: repo,
+                desc: desc,
                 vote: 1,
-                hash: hash,
-                photo: photourl
+                hash: hash
               }
               json.push({
                 ...newhero
@@ -119,10 +113,7 @@ async function performTasks() {
               })
               let content = JSON.stringify(json, undefined, 4);
 
-              let prTitle = `添加新人物-${people}`
-
-              let intro = await loadWikipedia(newhero.wiki, "mw-content-text")
-              let page = generateArticle(newhero, intro)
+              let prTitle = `添加新項目-${repo}`
 
               fs.writeFileSync(`./index.json`, content)
 
