@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     'desc': '<span><b>描述</b></span>',
     'update': '<i class="fa fa-history" title="last commit time"></i>',
     'star': '<i class="fa fa-star github" title="stars on github"></i>',
+    'fork': '<i class="fa fa-code-fork github" title="forks on github"></i>',
+    'contributors': '<i class="fa fa-users github" title="contributors on github"></i>',
   }
   $.getJSON(url, function(json) {
     herolist = json;
@@ -149,6 +151,12 @@ document.addEventListener("DOMContentLoaded", function(event){
         }else if (key=='star'){
           let imglink = `https://img.shields.io/${host}/stars/${author}/${reponame}?label=%20`
           td1.innerHTML += `<a href="${item['repo']}/stargazers"><img src="${imglink}"></img></a>`
+        }else if (key=='fork'){
+          let imglink = `https://img.shields.io/${host}/forks/${author}/${reponame}?label=%20`
+          td1.innerHTML += `<a href="${item['repo']}/network/members"><img src="${imglink}"></img></a>`
+        }else if (key=='contributors'){
+          let imglink = `https://img.shields.io/${host}/contributors/${author}/${reponame}?label=%20`
+          td1.innerHTML += `<a href="${item['repo']}/graphs/contributors"><img src="${imglink}"></img></a>`
         }else{
           let val = item[key] || 0
           td1.innerHTML = `<i style="font-size: 12px;">${val}</i>`
