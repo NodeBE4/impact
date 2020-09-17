@@ -274,5 +274,17 @@
         "desc": "Evil Man - 中国男性之恶",
         "vote": 1,
         "hash": "f9ec80d4982592c680ce893bd17287c6"
+    },
+    {
+        "repo": "https://github.com/ffffffff0x/Dork-Admin",
+        "desc": "盘点近年来的数据泄露、供应链污染事件",
+        "vote": 1,
+        "hash": "3f851e6f6ec9ab9adce244511dd547eb"
+    },
+    {
+        "repo": "https://github.com/ffffffff0x/Digital-Privacy",
+        "desc": "一个关于数字隐私搜集、保护、清理集一体的方案,外加开源信息收集(OSINT)对抗 (长期更新)",
+        "vote": 1,
+        "hash": "52c0849551d8b8c3f13e3f58afef72fc"
     }
 ]
