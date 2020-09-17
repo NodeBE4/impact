@@ -33,7 +33,7 @@ async function performTasks() {
     try {
       if (issue.title.substring(0,11)=='add_request'){
         let repo = issue.body.split('\n')[0]
-        let desc = issue.body.split('---描述---\n')[1]
+        let desc = issue.body.split('---描述---\n')[1].trim()
         let match = /^https:\/\/(github|gitlab).com\//
         if (match.test(repo)){
             // let rawfile = await octokit.repos.getContent({
