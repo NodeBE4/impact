@@ -334,5 +334,11 @@
         "desc": "已知最好的反对全球大规模监控的隐私保护工具目录。You are being watched. Protect your privacy against global mass surveillance.",
         "vote": 1,
         "hash": "9b42a89482aa22314ab3f54d5067b72a"
+    },
+    {
+        "repo": "https://github.com/gorhill/uBlock",
+        "desc": "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. 反跟踪的浏览器阻拦插件。",
+        "vote": 1,
+        "hash": "a1ece9817b331b353ef7e83308e5fae2"
     }
 ]
