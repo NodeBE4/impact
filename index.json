@@ -328,5 +328,11 @@
         "desc": "阐述网站流量分析和互联网监控、隐私的项目",
         "vote": 1,
         "hash": "1c2a7392112aa0023e0d942875f4011c"
+    },
+    {
+        "repo": "https://github.com/privacytools/privacytools.io",
+        "desc": "已知最好的反对全球大规模监控的隐私保护工具目录。You are being watched. Protect your privacy against global mass surveillance.",
+        "vote": 1,
+        "hash": "9b42a89482aa22314ab3f54d5067b72a"
     }
 ]
