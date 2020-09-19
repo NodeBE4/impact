@@ -31,11 +31,14 @@ async function performDoubleCheck() {
 
   let promises = data.map(async (issue) => {
     try {
-      let labels = octokit.issues.listLabelsOnIssue({
+      let responses = await octokit.issues.listLabelsOnIssue({
         owner: OWNER,
         repo: REPO,
         issue_number: issue.number
       });
+      var labels = responses.data.map(function (item) {
+        return item.name ;
+      }); 
       if (labels.includes('success') && !(labels.includes('double_checked'))){
         let repo = issue.body.split('\n')[0]
         let desc = issue.body.split('---描述---\n')[1].trim()
