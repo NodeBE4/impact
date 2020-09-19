@@ -26,6 +26,7 @@ jobs:
 
     - run: |
         npm install
+        node check.js
         node perform.js
         node clean.js
         git config --local user.email "you@example.com"
