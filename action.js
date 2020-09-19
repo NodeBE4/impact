@@ -39,7 +39,7 @@ async function performDoubleCheck() {
       var labels = responses.data.map(function (item) {
         return item.name ;
       }); 
-      if (labels.includes('success') && !(labels.includes('double_checked'))){
+      if (!(labels.includes('double_checked'))){
         let repo = issue.body.split('\n')[0]
         let desc = issue.body.split('---描述---\n')[1].trim()
         let match = /^https:\/\/(github|gitlab).com\//
