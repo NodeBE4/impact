@@ -352,5 +352,65 @@
         "desc": "互联网上的免费书籍",
         "vote": 1,
         "hash": "733da329fdfc57cd656fb9823656e805"
+    },
+    {
+        "repo": "https://github.com/Tsai1993/aisixiang",
+        "desc": "爱思想网文章备份，截至2017",
+        "vote": 1,
+        "hash": "0fb8d7fad6c6655fa5a35a99115dd131"
+    },
+    {
+        "repo": "https://github.com/CNValues/cnvalues.github.io",
+        "desc": "CN Values是基于8values源代码开发制作的娱乐性政治立场测试。为了使测试更贴近国人，在参考数个其他测试后，以中国当下语境为背景重新编制了测试题。",
+        "vote": 1,
+        "hash": "854654bfcfed5e43307276bdaa01fd9c"
+    },
+    {
+        "repo": "https://github.com/g0v/newshelper-extension",
+        "desc": "協助您判別含有誤導資訊的新聞",
+        "vote": 1,
+        "hash": "d51d8978cb8396a6dc9e94b46800d725"
+    },
+    {
+        "repo": "https://github.com/steamsth/beidafanyou",
+        "desc": "北京大学右派分子反动言论汇集",
+        "vote": 1,
+        "hash": "3151ae2a54ad51a14a237ac84eb4d25a"
+    },
+    {
+        "repo": "https://github.com/formulahendry/955.WLB",
+        "desc": "955 不加班的公司名单 - 工作 955，work–life balance (工作与生活的平衡)",
+        "vote": 1,
+        "hash": "9afe812fe99cdff158416e78a87c2d4a"
+    },
+    {
+        "repo": "https://github.com/lib-pku/libpku",
+        "desc": "贵校课程资料民间整理",
+        "vote": 1,
+        "hash": "faa6605c41f4fe4592c32861f5a73ddb"
+    },
+    {
+        "repo": "https://github.com/CPdogson/996action",
+        "desc": "一些关于维护八小时工作制和双休制的行动",
+        "vote": 1,
+        "hash": "529f3148e52bb818e4e2b8ef6ae0b837"
+    },
+    {
+        "repo": "https://github.com/JadaGates/ShadowsocksBio",
+        "desc": "记录一下SS的前世今生，以及一个简单的教程总结",
+        "vote": 1,
+        "hash": "cc341ae89a255a647d9fc8c585236614"
+    },
+    {
+        "repo": "https://github.com/FooCoder666/zhuling",
+        "desc": "公众号没药花园有关朱令案的所有文章",
+        "vote": 1,
+        "hash": "f14b6fae72e086c0f8ed0c25fd6f3f9b"
+    },
+    {
+        "repo": "https://github.com/jiayiliujiayi/2020nCov_individual_archives",
+        "desc": "\"Every individual matters. Every individual has a role to play.\" This is a repository that archives the individual stories during the COVID19 pandemic. 备份普通人在疫情期间的记录。（持续翻译 & 更新中）",
+        "vote": 1,
+        "hash": "84000763d43c4a6db5593d29c886a31c"
     }
 ]
