@@ -340,5 +340,11 @@
         "desc": "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. 反跟踪的浏览器阻拦插件。",
         "vote": 1,
         "hash": "a1ece9817b331b353ef7e83308e5fae2"
+    },
+    {
+        "repo": "https://github.com/zealotCE/AmericaOpposeAmerica",
+        "desc": "《美国反对美国》是王沪宁先生在上世纪80年代末赴美观察写作的。",
+        "vote": 1,
+        "hash": "f05508c11c370ca21c7075992d358e28"
     }
 ]
