@@ -412,5 +412,11 @@
         "desc": "\"Every individual matters. Every individual has a role to play.\" This is a repository that archives the individual stories during the COVID19 pandemic. 备份普通人在疫情期间的记录。（持续翻译 & 更新中）",
         "vote": 1,
         "hash": "84000763d43c4a6db5593d29c886a31c"
+    },
+    {
+        "repo": "https://github.com/nodebe4/weixin",
+        "desc": "新》查看被删除的微信公众号文章  (nodejs+jekyll)",
+        "vote": 1,
+        "hash": "257c2e72f2f5fbd0d638b09d73e75758"
     }
 ]
