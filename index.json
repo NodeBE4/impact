@@ -344,7 +344,7 @@
     {
         "repo": "https://github.com/zealotCE/AmericaOpposeAmerica",
         "desc": "《美国反对美国》是王沪宁先生在上世纪80年代末赴美观察写作的。",
-        "vote": 1,
+        "vote": 2,
         "hash": "f05508c11c370ca21c7075992d358e28"
     },
     {
@@ -398,7 +398,7 @@
     {
         "repo": "https://github.com/JadaGates/ShadowsocksBio",
         "desc": "记录一下SS的前世今生，以及一个简单的教程总结",
-        "vote": 1,
+        "vote": 2,
         "hash": "cc341ae89a255a647d9fc8c585236614"
     },
     {
@@ -416,7 +416,7 @@
     {
         "repo": "https://github.com/nodebe4/weixin",
         "desc": "新》查看被删除的微信公众号文章  (nodejs+jekyll)",
-        "vote": 1,
+        "vote": 2,
         "hash": "257c2e72f2f5fbd0d638b09d73e75758"
     },
     {
