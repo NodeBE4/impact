@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     'repo': '<span><b>仓库</b></span>',
     'author': '<span><b>作者</b></span>',
     'desc': '<span><b>描述</b></span>',
+    'search': '<i class="fa fa-search" title="search on github"></i>',
     'update': '<i class="fa fa-history" title="last commit time"></i>',
     'star': '<i class="fa fa-star github" title="stars on github"></i>',
     'fork': '<i class="fa fa-code-fork github" title="forks on github"></i>',
@@ -141,6 +142,9 @@ document.addEventListener("DOMContentLoaded", function(event){
         }else if (key=='contributors'){
           let imglink = `https://img.shields.io/${host}/contributors/${author}/${reponame}?label=%20`
           td1.innerHTML += `<a href="${item['repo']}/graphs/contributors"><img src="${imglink}"></img></a>`
+        }else if (key=='search'){
+          let searchlink = `https://github.com/search?q=${reponame}`
+          td1.innerHTML += `<a href="${searchlink}" target="_blank"><i class="fa fa-search" title="search on github"></i></a>`
         }else{
           let val = item[key] || 0
           td1.innerHTML = `<i style="font-size: 12px;">${val}</i>`
