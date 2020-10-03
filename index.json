@@ -416,7 +416,7 @@
     {
         "repo": "https://github.com/nodebe4/weixin",
         "desc": "新》查看被删除的微信公众号文章  (nodejs+jekyll)",
-        "vote": 2,
+        "vote": 3,
         "hash": "257c2e72f2f5fbd0d638b09d73e75758"
     },
     {
@@ -424,5 +424,11 @@
         "desc": "这个导航网站统计了开源平台上抵抗新冠肺炎的项目，是一个连结各个开源项目的入口。 超过一万人参与了这个列表中的项目，并获得了超过一万颗星。",
         "vote": 1,
         "hash": "d5736e112c018f5691bc4508b15df352"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/art",
+        "desc": "自由派文艺作品：音乐、影视、书籍、游戏",
+        "vote": 1,
+        "hash": "09249f2cf65838f23ed85a2327c12618"
     }
 ]
