@@ -430,5 +430,11 @@
         "desc": "自由派文艺作品：音乐、影视、书籍、游戏",
         "vote": 1,
         "hash": "09249f2cf65838f23ed85a2327c12618"
+    },
+    {
+        "repo": "https://github.com/chinapedia/wikipedia.zh",
+        "desc": "中文维基百科导出 chinapedia.org",
+        "vote": 1,
+        "hash": "4a55684169943273603ef96815c1402d"
     }
 ]
