@@ -436,5 +436,11 @@
         "desc": "中文维基百科导出 chinapedia.org",
         "vote": 1,
         "hash": "4a55684169943273603ef96815c1402d"
+    },
+    {
+        "repo": "https://github.com/PincongBot/qdaily",
+        "desc": "好奇心日报备份（json格式）",
+        "vote": 1,
+        "hash": "025f790680ba378343b3b1210aa1bf49"
     }
 ]
