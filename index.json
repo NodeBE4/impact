@@ -442,5 +442,11 @@
         "desc": "好奇心日报备份（json格式）",
         "vote": 1,
         "hash": "025f790680ba378343b3b1210aa1bf49"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/hero",
+        "desc": "纪念那些对公众自由作出贡献的说真话的人物",
+        "vote": 1,
+        "hash": "24ce09eab43dd5ab620f5bcc90edf4e8"
     }
 ]
