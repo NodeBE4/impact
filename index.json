@@ -448,5 +448,11 @@
         "desc": "纪念那些对公众自由作出贡献的说真话的人物",
         "vote": 1,
         "hash": "24ce09eab43dd5ab620f5bcc90edf4e8"
+    },
+    {
+        "repo": "https://github.com/zhu327/rss",
+        "desc": "RSS工厂，生成微博，微信公众号，知乎日报RSS",
+        "vote": 1,
+        "hash": "6178df6e714416bf02a2a3e96756adde"
     }
 ]
