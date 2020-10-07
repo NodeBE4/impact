@@ -460,5 +460,11 @@
         "desc": "A free, self-hostable aggregator… [freshrss.org](https://freshrss.org)",
         "vote": 1,
         "hash": "ba813caf7175e40351460fdff886d6e0"
+    },
+    {
+        "repo": "https://github.com/RSS-Bridge/rss-bridge",
+        "desc": "The RSS feed for websites missing it",
+        "vote": 1,
+        "hash": "45eedaeb3aa350a0d853a3cc27d20b71"
     }
 ]
