@@ -454,5 +454,11 @@
         "desc": "RSS工厂，生成微博，微信公众号，知乎日报RSS",
         "vote": 1,
         "hash": "6178df6e714416bf02a2a3e96756adde"
+    },
+    {
+        "repo": "https://github.com/FreshRSS/FreshRSS",
+        "desc": "A free, self-hostable aggregator… [freshrss.org](https://freshrss.org)",
+        "vote": 1,
+        "hash": "ba813caf7175e40351460fdff886d6e0"
     }
 ]
