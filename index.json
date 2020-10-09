@@ -466,5 +466,11 @@
         "desc": "The RSS feed for websites missing it",
         "vote": 1,
         "hash": "45eedaeb3aa350a0d853a3cc27d20b71"
+    },
+    {
+        "repo": "https://github.com/invishantom/nCovMemory",
+        "desc": "2020新冠肺炎记忆：传媒报道与非虚构写作（原项目的fork）",
+        "vote": 1,
+        "hash": "6869a1d22cffb0811445a0a2283051ab"
     }
 ]
