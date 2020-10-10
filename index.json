@@ -472,5 +472,11 @@
         "desc": "2020新冠肺炎记忆：传媒报道与非虚构写作（原项目的fork）",
         "vote": 1,
         "hash": "6869a1d22cffb0811445a0a2283051ab"
+    },
+    {
+        "repo": "https://github.com/net4people/bbs/",
+        "desc": "讨论互联网审查的高质量论坛",
+        "vote": 1,
+        "hash": "6829adcc6fe60425a04752b4c6eb3aa0"
     }
 ]
