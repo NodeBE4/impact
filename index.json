@@ -147,7 +147,7 @@
         "repo": "https://github.com/china-digital-times/china-digital-times.github.io",
         "desc": "中国数字时代的免翻墙镜像与离线浏览",
         "hash": "c3852123ef097e820dadcc425592a540",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/PincongBackup/PincongBackup.github.io",
@@ -213,7 +213,7 @@
         "repo": "https://github.com/lihkg-backup/lihkg-backup.github.io",
         "desc": "LIHKG❤️Github (Unofficial)",
         "hash": "2c55fbdbd7b552938fdbd274703662e0",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/lihkg-backup/thread",
@@ -440,7 +440,7 @@
     {
         "repo": "https://github.com/PincongBot/qdaily",
         "desc": "好奇心日报备份（json格式）",
-        "vote": 1,
+        "vote": 2,
         "hash": "025f790680ba378343b3b1210aa1bf49"
     },
     {
