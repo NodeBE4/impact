@@ -478,5 +478,11 @@
         "desc": "讨论互联网审查的高质量论坛",
         "vote": 1,
         "hash": "6829adcc6fe60425a04752b4c6eb3aa0"
+    },
+    {
+        "repo": "https://github.com/co-memory/bbs/",
+        "desc": "公共空间抢救小组讨论区",
+        "vote": 1,
+        "hash": "3cc83ee13a11886c1b2e5100d19fd460"
     }
 ]
