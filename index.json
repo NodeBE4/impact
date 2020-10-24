@@ -446,7 +446,7 @@
     {
         "repo": "https://github.com/NodeBE4/hero",
         "desc": "纪念那些对公众自由作出贡献的说真话的人物",
-        "vote": 1,
+        "vote": 2,
         "hash": "24ce09eab43dd5ab620f5bcc90edf4e8"
     },
     {
@@ -458,7 +458,7 @@
     {
         "repo": "https://github.com/FreshRSS/FreshRSS",
         "desc": "A free, self-hostable aggregator… [freshrss.org](https://freshrss.org)",
-        "vote": 1,
+        "vote": 2,
         "hash": "ba813caf7175e40351460fdff886d6e0"
     },
     {
@@ -488,7 +488,7 @@
     {
         "repo": "https://github.com/DIYgod/RSSHub",
         "desc": "RSS生成引擎，万物皆可RSS",
-        "vote": 1,
+        "vote": 2,
         "hash": "438bfba3f191ab16c21abb7a72bac900"
     }
 ]
