@@ -136,15 +136,15 @@ function updateReadme(data){
 </table>`)).window.document.querySelector("table")
 
   const thead_format = {
-    'vote': '<i style="color:#2980B9" class="fa fa-thumbs-up"></i>',
-    'repo': '<span><b>仓库</b></span>',
-    'author': '<span><b>作者</b></span>',
-    'desc': '<span><b>描述</b></span>',
-    'search': '<i class="fa fa-search" title="search on github"></i>',
-    'update': '<i class="fa fa-history" title="last commit time"></i>',
-    'star': '<i class="fa fa-star github" title="stars on github"></i>',
-    'fork': '<i class="fa fa-code-fork github" title="forks on github"></i>',
-    'contributors': '<i class="fa fa-users github" title="contributors on github"></i>',
+    'vote': '贊',
+    'repo': '倉庫',
+    'author': '作者',
+    'desc': '描述',
+    'search': '搜索',
+    'update': '更新',
+    'star': 'star',
+    'fork': 'fork',
+    'contributors': '貢獻者',
   }
 
   herolist = data;
