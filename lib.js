@@ -127,6 +127,105 @@ function timeConverter(UNIX_timestamp){
   return a
 }
 
+
+function updateReadme(data){
+  const table = (new JSDOM(`<table id="add-hero-form" class="table table-striped table-bordered table-sm" style="width:100%;">
+    <thead><tr></tr></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+</table>`)).window.document.querySelector("table")
+
+  const thead_format = {
+    'vote': '<i style="color:#2980B9" class="fa fa-thumbs-up"></i>',
+    'repo': '<span><b>仓库</b></span>',
+    'author': '<span><b>作者</b></span>',
+    'desc': '<span><b>描述</b></span>',
+    'search': '<i class="fa fa-search" title="search on github"></i>',
+    'update': '<i class="fa fa-history" title="last commit time"></i>',
+    'star': '<i class="fa fa-star github" title="stars on github"></i>',
+    'fork': '<i class="fa fa-code-fork github" title="forks on github"></i>',
+    'contributors': '<i class="fa fa-users github" title="contributors on github"></i>',
+  }
+
+  herolist = data;
+
+  var thead = table.querySelector('thead');
+  var tbody = table.querySelector('tbody');
+  var tfoot = table.querySelector('tfoot');
+  var tr0 = thead.querySelector('tr');
+  var thead_vals = Object.values(thead_format)
+  var thead_keys = Object.keys(thead_format)
+  thead_vals.map(item => {
+    var th = `<th>${item}</th>`
+    tr0.innerHTML += th
+  });
+
+  var lis = herolist.map(item => {
+    let texts = item['repo'].split('/')
+    let origin = texts[2]
+    let author = texts[3]
+    let reponame = texts[4]
+    let authorlink = texts.slice(0,4).join('/')
+    let host = origin.split('.')[0]
+
+    let tr = ``;
+    thead_keys.map(key => {
+      let td1 = ``
+      if (key == 'repo'){
+        if (origin=='github.com'){
+          td1 += `<a class="thumb-post" href="${item['repo']}"><i class="fa fa-github github"></i></a>`
+        }else if (origin=='gitlab.com'){
+          td1 += `<a class="thumb-post" href="${item['repo']}"><i class="fa fa-gitlab gitlab"></i></a>`
+        }
+        td1 += `<a href="${item['repo']}"><b style="font-size: 12px;">${reponame}</b></a>`;
+      }else if(key=='vote'){
+        let val = item[key] || 0
+        td1 += val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        td1 += `<a id="vote-${item.hash}" onclick="vote_hero('${item.hash}')" style="color:#2980B9"> <i class="fa fa-thumbs-o-up"></i></a>`
+      }else if (key == 'author'){
+        td1 += `<a href="${authorlink}" style="font-size: 12px;">${author}</a>`
+      }else if (key=='update'){
+        let imglink = `https://img.shields.io/${host}/last-commit/${author}/${reponame}?label=%20`
+        td1 += `<a href="${item['repo']}"><img src="${imglink}"></img></a>`
+      }else if (key=='star'){
+        let imglink = `https://img.shields.io/${host}/stars/${author}/${reponame}?label=%20`
+        td1 += `<a href="${item['repo']}/stargazers"><img src="${imglink}"></img></a>`
+      }else if (key=='fork'){
+        let imglink = `https://img.shields.io/${host}/forks/${author}/${reponame}?label=%20`
+        td1 += `<a href="${item['repo']}/network/members"><img src="${imglink}"></img></a>`
+      }else if (key=='contributors'){
+        let imglink = `https://img.shields.io/${host}/contributors/${author}/${reponame}?label=%20`
+        td1 += `<a href="${item['repo']}/graphs/contributors"><img src="${imglink}"></img></a>`
+      }else if (key=='search'){
+        let searchlink = `https://github.com/search?q=${reponame}`
+        td1 += `<a href="${searchlink}" target="_blank"><i class="fa fa-search" title="search on github"></i></a>`
+      }else{
+        let val = item[key] || 0
+        td1 = `<i style="font-size: 12px;">${val}</i>`
+      }
+      tr += `<td>${td1}</td>`;
+    });
+    tbody.innerHTML += `<tr>${tr}</tr>`
+  });
+
+  var tr2 = ``;
+  thead_vals.map(item => {
+    var th = `<th data-field="${item}">${item}</th>`;
+    tr2 += th
+  });
+  tfoot.innerHTML += `<tr>${tr2}</tr>`;
+  // $('#add-hero-form').DataTable( {
+  //     "order": [[ 0, "desc" ]],
+  //     "language": {
+  //         "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Chinese.json"
+  //     },
+  //     "pageLength": 50
+  // });
+  console.log(table)
+  return table.outerHTML
+}
+
+
 async function loadRefSites(){
 
   await fetch(db_news_url, settings)
@@ -171,5 +270,5 @@ function between(min, max) {
     Math.random() * (max - min) + min
   )
 }
-module.exports = { loadRefSites, loadWikipedia, generateArticle, googlePhoto };
+module.exports = { loadRefSites, loadWikipedia, generateArticle, googlePhoto, updateReadme };
 

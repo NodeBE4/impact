@@ -6,7 +6,7 @@ const https = require('https')
 const fetch = require('node-fetch')
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-let { loadRefSites, loadWikipedia, generateArticle, googlePhoto } = require('./lib')
+let { loadRefSites, loadWikipedia, generateArticle, googlePhoto, updateReadme } = require('./lib')
 let URL = urlMod.URL
 
 let db_news_url = 'https://nodebe4.github.io/waimei/search.json'
@@ -38,6 +38,13 @@ async function perform() {
   let content = JSON.stringify(heroes, undefined, 4)
   fs.writeFileSync(`./index.json`, content)
   
+  tablehtml = updateReadme(heroes)
+  let readme = fs.readFileSync('./README.md', {encoding:'utf8', flag:'r'})
+  let readmeParts = readme.split("##")
+  let maintable = "# 開源社會影響力項目榜單\n\n"
+  readmeParts[0] = maintable + tablehtml + '\n\n'
+  readme = readmeParts.join("##")
+  fs.writeFileSync(`./README.md`, readme)
 
 }
 
