@@ -224,7 +224,7 @@
     {
         "repo": "https://github.com/duty-machine/duty-machine",
         "desc": "一个备份网络文章的服务。当前支持的网站有：微信公众平台，微博文章，知乎专栏，豆瓣日记，豆瓣小组话题，matters，telegraph，chinadigitaltimes，rfa。",
-        "vote": 3,
+        "vote": 4,
         "hash": "5c847e0c9321a8d3cf5eea7fa234c28f"
     },
     {
@@ -296,7 +296,7 @@
     {
         "repo": "https://github.com/sikaozhe1997/Xin-Yue",
         "desc": "岳昕：致北大师生与北大外国语学院的一封公开信",
-        "vote": 1,
+        "vote": 2,
         "hash": "2a97a61cf238921a449dd382f1135c56"
     },
     {
@@ -308,7 +308,7 @@
     {
         "repo": "https://github.com/programthink/zhao",
         "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
-        "vote": 2,
+        "vote": 3,
         "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
     },
     {
@@ -362,7 +362,7 @@
     {
         "repo": "https://github.com/CNValues/cnvalues.github.io",
         "desc": "CN Values是基于8values源代码开发制作的娱乐性政治立场测试。为了使测试更贴近国人，在参考数个其他测试后，以中国当下语境为背景重新编制了测试题。",
-        "vote": 1,
+        "vote": 2,
         "hash": "854654bfcfed5e43307276bdaa01fd9c"
     },
     {
@@ -416,7 +416,7 @@
     {
         "repo": "https://github.com/nodebe4/weixin",
         "desc": "新》查看被删除的微信公众号文章  (nodejs+jekyll)",
-        "vote": 3,
+        "vote": 4,
         "hash": "257c2e72f2f5fbd0d638b09d73e75758"
     },
     {
@@ -470,7 +470,7 @@
     {
         "repo": "https://github.com/invishantom/nCovMemory",
         "desc": "2020新冠肺炎记忆：传媒报道与非虚构写作（原项目的fork）",
-        "vote": 1,
+        "vote": 2,
         "hash": "6869a1d22cffb0811445a0a2283051ab"
     },
     {
