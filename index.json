@@ -490,5 +490,11 @@
         "desc": "RSS生成引擎，万物皆可RSS",
         "vote": 2,
         "hash": "438bfba3f191ab16c21abb7a72bac900"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/21ccom",
+        "desc": "曾经的自由派大本营，被2016年关闭的共识网(21ccom.net)的时光机存档索引",
+        "vote": 1,
+        "hash": "f1d28f266e7354dd42292c5e0824dc5c"
     }
 ]
