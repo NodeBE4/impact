@@ -117,7 +117,7 @@
         "repo": "https://github.com/Terminus2049/Wechatscope",
         "desc": "查看被删除的微信公众号文章",
         "hash": "1aa3ec4b408e8894aaeeccd6547bd3b6",
-        "vote": 3
+        "vote": 4
     },
     {
         "repo": "https://github.com/Terminus2049/matters-metadata",
@@ -230,7 +230,7 @@
     {
         "repo": "https://github.com/NodeBE4/opinion",
         "desc": "聚合以社会、政治话题为主的文章和社交媒体上优秀Up主的评论 ",
-        "vote": 4,
+        "vote": 5,
         "hash": "184dc00d00fae28d0efdc9b5c7b7f98d"
     },
     {
@@ -308,7 +308,7 @@
     {
         "repo": "https://github.com/programthink/zhao",
         "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
-        "vote": 3,
+        "vote": 4,
         "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
     },
     {
@@ -332,7 +332,7 @@
     {
         "repo": "https://github.com/privacytools/privacytools.io",
         "desc": "已知最好的反对全球大规模监控的隐私保护工具目录。You are being watched. Protect your privacy against global mass surveillance.",
-        "vote": 2,
+        "vote": 3,
         "hash": "9b42a89482aa22314ab3f54d5067b72a"
     },
     {
@@ -374,7 +374,7 @@
     {
         "repo": "https://github.com/steamsth/beidafanyou",
         "desc": "北京大学右派分子反动言论汇集",
-        "vote": 1,
+        "vote": 2,
         "hash": "3151ae2a54ad51a14a237ac84eb4d25a"
     },
     {
@@ -440,7 +440,7 @@
     {
         "repo": "https://github.com/PincongBot/qdaily",
         "desc": "好奇心日报备份（json格式）",
-        "vote": 2,
+        "vote": 3,
         "hash": "025f790680ba378343b3b1210aa1bf49"
     },
     {
@@ -476,7 +476,7 @@
     {
         "repo": "https://github.com/net4people/bbs/",
         "desc": "讨论互联网审查的高质量论坛",
-        "vote": 1,
+        "vote": 2,
         "hash": "6829adcc6fe60425a04752b4c6eb3aa0"
     },
     {
@@ -488,7 +488,7 @@
     {
         "repo": "https://github.com/DIYgod/RSSHub",
         "desc": "RSS生成引擎，万物皆可RSS",
-        "vote": 2,
+        "vote": 3,
         "hash": "438bfba3f191ab16c21abb7a72bac900"
     },
     {
