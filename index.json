@@ -496,5 +496,11 @@
         "desc": "共识网(21ccom.net)是大师云集的思想平台，于2016年被当局以传播错误思想为由关闭。本项目为共识网的互联网时光机快照提供索引。",
         "vote": 2,
         "hash": "f1d28f266e7354dd42292c5e0824dc5c"
+    },
+    {
+        "repo": "https://github.com/programthink/sites",
+        "desc": "【编程随想】收藏的各色网站",
+        "vote": 1,
+        "hash": "1111e2779ed2c672412c43b2a30d6e4f"
     }
 ]
