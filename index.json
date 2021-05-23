@@ -502,5 +502,11 @@
         "desc": "【编程随想】收藏的各色网站",
         "vote": 1,
         "hash": "1111e2779ed2c672412c43b2a30d6e4f"
+    },
+    {
+        "repo": "https://github.com/thematters/matters-web",
+        "desc": "Codebase of Matters' website",
+        "vote": 1,
+        "hash": "6549f2fdc825c40aaf0e6a97bef6e6a7"
     }
 ]
