@@ -508,5 +508,11 @@
         "desc": "Codebase of Matters' website",
         "vote": 1,
         "hash": "6549f2fdc825c40aaf0e6a97bef6e6a7"
+    },
+    {
+        "repo": "https://github.com/v2fly/v2ray-core",
+        "desc": "A platform for building proxies to bypass network restrictions.",
+        "vote": 1,
+        "hash": "9327303a657bd76901f1adb73b6140f8"
     }
 ]
