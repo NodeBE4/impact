@@ -514,5 +514,11 @@
         "desc": "A platform for building proxies to bypass network restrictions.",
         "vote": 1,
         "hash": "9327303a657bd76901f1adb73b6140f8"
+    },
+    {
+        "repo": "https://github.com/chinyichun/programthinkmirror",
+        "desc": "编程随想的博客及其评论区内容备份",
+        "vote": 1,
+        "hash": "9bec590ee1fffd72f4ab05d47d3686dd"
     }
 ]
