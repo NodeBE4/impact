@@ -520,5 +520,11 @@
         "desc": "编程随想的博客及其评论区内容备份",
         "vote": 1,
         "hash": "9bec590ee1fffd72f4ab05d47d3686dd"
+    },
+    {
+        "repo": "https://github.com/timqian/chinese-independent-blogs",
+        "desc": "中文独立博客列表",
+        "vote": 1,
+        "hash": "fe3538269bab113af4ee2b757bdae3b5"
     }
 ]
