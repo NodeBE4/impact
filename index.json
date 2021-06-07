@@ -201,7 +201,7 @@
         "repo": "https://github.com/program-think-mirrors/blog",
         "desc": "编程随想的博客镜像",
         "hash": "01305b7e44b012ac3b83cf92b01cd4d8",
-        "vote": 3
+        "vote": 4
     },
     {
         "repo": "https://github.com/program-think-mirrors/books",
@@ -308,7 +308,7 @@
     {
         "repo": "https://github.com/programthink/zhao",
         "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
-        "vote": 5,
+        "vote": 6,
         "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
     },
     {
