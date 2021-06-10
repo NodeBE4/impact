@@ -111,7 +111,7 @@
         "repo": "https://github.com/Terminus2049/Terminus2049.github.io",
         "desc": "在 GitHub 开放平台搭建的一个站点，以去中心化的方式备份微信、微博等平台被删文章",
         "hash": "ada243b459be33aeaa54b9b4ce66c18d",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/Terminus2049/Wechatscope",
@@ -308,7 +308,7 @@
     {
         "repo": "https://github.com/programthink/zhao",
         "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
-        "vote": 6,
+        "vote": 7,
         "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
     },
     {
