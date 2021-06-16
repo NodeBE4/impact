@@ -308,7 +308,7 @@
     {
         "repo": "https://github.com/programthink/zhao",
         "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
-        "vote": 7,
+        "vote": 8,
         "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
     },
     {
@@ -320,7 +320,7 @@
     {
         "repo": "https://github.com/Gnothi-Seauton/COVID-19-timeline",
         "desc": "记录自2019年12月起武汉新冠肺炎疫情进展的时间线。",
-        "vote": 2,
+        "vote": 3,
         "hash": "85b7b1ef7faebb0ad328110c53404b8a"
     },
     {
@@ -362,7 +362,7 @@
     {
         "repo": "https://github.com/CNValues/cnvalues.github.io",
         "desc": "CN Values是基于8values源代码开发制作的娱乐性政治立场测试。为了使测试更贴近国人，在参考数个其他测试后，以中国当下语境为背景重新编制了测试题。",
-        "vote": 2,
+        "vote": 3,
         "hash": "854654bfcfed5e43307276bdaa01fd9c"
     },
     {
