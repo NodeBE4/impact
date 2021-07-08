@@ -538,5 +538,11 @@
         "desc": "最新的dutymachine",
         "vote": 1,
         "hash": "9366a542dae9f877c34c28c03ab0dff8"
+    },
+    {
+        "repo": "https://github.com/LuoSheng12345/zhao-visualized",
+        "desc": "这是将编程随想的《太子党关系网络》数据可视化项目的一部分。这个部分展示了这些人的关系，去这里 https://zhao-visualized.netlify.app 可以看到这个repo自动生成的网站。",
+        "vote": 1,
+        "hash": "062446c6ab771070d013e486a5c7cf32"
     }
 ]
