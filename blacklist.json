@@ -1,0 +1,31 @@
+[
+    {
+        "people": "习近平",
+        "keyword": "",
+        "wiki": "https://zh.wikipedia.org/wiki/%E4%B9%A0%E8%BF%91%E5%B9%B3",
+        "vote": 2,
+        "hash": "4c48c98b1fad5c0340843fad7e50ef6d",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Xi_Jinping_in_2019_%28cropped%29.jpg/250px-Xi_Jinping_in_2019_%28cropped%29.jpg",
+        "google": "97700000",
+        "twitter": "1230000",
+        "ytb": "9030000",
+        "reddit": "25800",
+        "medium": "5680",
+        "matters": "2030",
+        "update": "2020-09-10 21:32:53.798778",
+        "imgur": "https://i.imgur.com/boRi2lN.jpeg",
+        "chinesepen": "12600"
+    },
+    {
+        "people": "蔡英文",
+        "wiki": "https://zh.wikipedia.org/wiki/%E8%94%A1%E8%8B%B1%E6%96%87"
+    },
+    {
+        "people": "唐纳德·特朗普",
+        "wiki": "https://zh.wikipedia.org/wiki/%E5%94%90%E7%B4%8D%C2%B7%E5%B7%9D%E6%99%AE"
+    },
+    {
+        "people": "Donald Trump",
+        "wiki": "https://en.wikipedia.org/wiki/Donald_Trump"
+    }
+]

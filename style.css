@@ -1,0 +1,734 @@
+@charset "UTF-8";
+/***************/
+/* MEYER RESET */
+/***************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, dl {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**************/
+/* BASE RULES */
+/**************/
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape */
+}
+
+body {
+  font-family: Optima, "Lucida Sans", Calibri, Candara, Arial, source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "Songti SC", "Microsoft YaHei", sans-serif;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 840px;
+  padding: 0 10px;
+  width: 100%;
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1 a {
+  color: inherit;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h6 {
+  color: #868e96;
+}
+
+p {
+  color: #343a40;
+  margin: 15px 0px;
+  text-align: justify;
+}
+
+a {
+  color: #1b6ec2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, a:active {
+  color: #1b6ec2;
+}
+
+figcaption {
+  text-align: center;
+  font-size: medium;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #f1f3f5;
+  margin: 1.5em auto;
+}
+
+ol > li:before, ul > li:before {
+  position: absolute;
+  width: 1.4em;
+  margin-left: -1.4em;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+ul > li:before {
+  content: "\2022";
+  padding-right: 0.3em;
+  font-family: inherit;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+ol {
+  counter-reset: section;
+}
+
+ol > li:before {
+  counter-increment: section;
+  content: counter(section) ".";
+  padding-right: 0.3em;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+ol > li, ul > li {
+  margin: 0 auto 0.4em 1.4em;
+  line-height: 1.55;
+}
+
+ol > li > ol,
+ol > li > ul, ul > li > ol,
+ul > li > ul {
+  margin-top: 0.4em;
+}
+
+li > ol > li,
+li > ul > li {
+  font-size: 0.95em;
+  margin: 0 auto 0.38em 1.33em;
+}
+
+dt {
+  float: left;
+  width: 180px;
+  overflow: auto;
+  clear: left;
+  text-align: right;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 640px) {
+  dt {
+    width: 120px;
+  }
+}
+
+dd {
+  margin-left: 200px;
+  margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 640px) {
+  dd {
+    margin-left: 140px;
+  }
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 1px solid #e9ecef;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f1f3f5;
+}
+
+blockquote {
+  font-weight: 300;
+  padding: 0 0 0 1.4rem;
+  margin: 0 2.0rem 1rem 0rem;
+  border-left: 0.2em solid #dee2e6;
+  text-align: justify;
+}
+
+blockquote p {
+  margin-bottom: 0;
+  font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体', SimKai,DFKai-SB,NSimSun,serif;
+}
+
+a.footnote, .post p a.footnote, .post ol a.footnote, .post ul a.footnote {
+  margin: 0 3px;
+  padding: 0 2px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #f1f3f5;
+  border-radius: 2px;
+  -webkit-text-stroke: 0.25px;
+  -webkit-transition: 0.2s ease-out all;
+  text-decoration: none;
+}
+
+a.footnote:hover, .post p a.footnote:hover, .post ol a.footnote:hover, .post ul a.footnote:hover {
+  background: #f1f3f5;
+}
+
+.footnotes {
+  border-top: 1px solid #f1f3f5;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.gmnoprint img {
+  max-width: none;
+}
+
+/*
+::-moz-selection {
+  color: $selection-color;
+  background: $selection-background-color;
+}
+::selection {
+  color: $selection-color;
+  background: $selection-background-color;
+}
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-image {
+  margin: 0 auto;
+  display: block;
+}
+
+.right {
+  text-align: right;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+.wrapper-masthead {
+  margin-bottom: 20px;
+}
+
+.masthead {
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 640px) {
+  .masthead {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 640px) {
+  .site-avatar {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-avatar img {
+  border-radius: 5px;
+}
+
+.site-info {
+  float: left;
+}
+
+@media screen and (max-width: 640px) {
+  .site-info {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: #666;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 640px) {
+  .site-description {
+    margin: 3px 0;
+    text-align: center;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+}
+
+nav a {
+  margin-left: 20px;
+  color: #333;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 640px) {
+  nav a {
+    margin: 0 10px;
+    color: #4183C4;
+  }
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post h1 {
+  margin-bottom: .1em;
+}
+
+.post .date {
+  font-weight: 300;
+  font-size: 14px;
+  color: #868e96;
+  margin-right: 3px;
+}
+
+.post .tag {
+  display: inline;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.post .tag li:before {
+  content: '';
+}
+
+.post .tag li {
+  display: inline;
+  margin: 0;
+}
+
+.post .tag li > a {
+  margin: 3px 3px 3px 0;
+  padding: .5px 4px;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+
+.post .comments {
+  margin-top: 10px;
+}
+
+.post .read-more {
+  font-size: 15px;
+}
+
+.pagination {
+  font-weight: 300;
+  padding: 0 0;
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+  .pagination {
+    font-size: 14px;
+  }
+}
+
+.pagination > .prev {
+  float: left;
+  width: 47%;
+}
+
+.pagination > .prev a {
+  color: #868e96;
+}
+
+.pagination > .prev a:hover, .pagination > .prev a:focus {
+  color: #495057;
+}
+
+.pagination > .next {
+  float: right;
+  text-align: right;
+  width: 47%;
+}
+
+.pagination > .next a {
+  color: #868e96;
+}
+
+.pagination > .next a:hover, .pagination > .next a:focus {
+  color: #495057;
+}
+
+.archive {
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+
+.archive a {
+  color: #343a40;
+}
+
+.archive time {
+  color: #868e96;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 3px;
+}
+
+.archive a:visited {
+  color: gray;
+}
+
+.archive a:hover {
+  color: hotpink;
+}
+
+.archive a:active {
+  color: blue;
+}
+
+.searched {
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+
+.searched a {
+  color: #1c7cd6;
+}
+
+.searched time {
+  color: #868e96;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 3px;
+}
+
+.searched a:visited {
+  color: gray;
+}
+
+.searched a:hover {
+  color: hotpink;
+}
+
+.searched a:active {
+  color: blue;
+}
+
+a.tag {
+  display: inline-block;
+  margin: 1px;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.tags > .label > li:before {
+  content: "";
+}
+
+.tags > .label > li {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  display: inline;
+}
+
+.tags > .label > li > a {
+  display: inline-block;
+  margin: 1px;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+
+.tags > .label > li > a span {
+  float: left;
+  padding: .5px 5px;
+}
+
+.tags > .label > li > a span.count {
+  background-color: #dee2e6;
+  border-radius: 0 3px 3px 0;
+}
+
+.tags > .tag a {
+  color: #343a40;
+}
+
+.tags > .tag time {
+  color: #868e96;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 3px;
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f1f3f5;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p, footer div {
+  font-size: 14px;
+  text-align: center;
+}
+
+footer .svg-icon {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+footer .svg-icon li {
+  display: inline-block;
+  margin: 10px;
+}
+
+footer .svg-icon svg {
+  height: 30px;
+  width: 30px;
+}
+
+footer .svg-icon em {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: -.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fa-m:before {
+  font-family: Arial;
+  /* your font family here! */
+  font-weight: bold;
+  content: 'M';
+}
+
+.thumb-post img {
+  object-fit: cover;
+  object-position: top;
+  width: 40px;
+  overflow: hidden;
+  height: 40px;
+  display: inline;
+}
+
+.help::after {
+  font-size: 12px;
+  display: none;
+}
+
+#toggle:checked ~ .help::after {
+  font-size: 0px;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
+  opacity: 0%;
+  /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+/*# sourceMappingURL=style.css.map */
