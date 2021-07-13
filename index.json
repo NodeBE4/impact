@@ -544,5 +544,11 @@
         "desc": "这是将编程随想的《太子党关系网络》数据可视化项目的一部分。这个部分展示了这些人的关系，去这里 https://zhao-visualized.netlify.app 可以看到这个repo自动生成的网站。",
         "vote": 1,
         "hash": "062446c6ab771070d013e486a5c7cf32"
+    },
+    {
+        "repo": "https://github.com/diymysite/blog",
+        "desc": "教你怎么建这样一个博客",
+        "vote": 1,
+        "hash": "dd86d2d7bfee6b936dbce9f2c06b88c0"
     }
 ]
