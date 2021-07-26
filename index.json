@@ -556,5 +556,11 @@
         "desc": "编程随想的博客GithubPage镜像  访问[https://program-think-mirror.github.io](https://program-think-mirror.github.io)",
         "vote": 2,
         "hash": "a9afa48501ea4e5b255052ec9a282da4"
+    },
+    {
+        "repo": "https://github.com/ipfs/awesome-ipfs",
+        "desc": "Useful resources for using IPFS and building things on top of it",
+        "vote": 1,
+        "hash": "2935e8f7353ada8168fbc53ba6062783"
     }
 ]
