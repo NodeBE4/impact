@@ -562,5 +562,11 @@
         "desc": "Useful resources for using IPFS and building things on top of it",
         "vote": 1,
         "hash": "2935e8f7353ada8168fbc53ba6062783"
+    },
+    {
+        "repo": "https://github.com/zmike1993/hello-world",
+        "desc": "思想杂货铺",
+        "vote": 1,
+        "hash": "82595a142e2277f8fe022ea198c55e8e"
     }
 ]
