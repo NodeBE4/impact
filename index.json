@@ -568,5 +568,11 @@
         "desc": "思想杂货铺",
         "vote": 1,
         "hash": "82595a142e2277f8fe022ea198c55e8e"
+    },
+    {
+        "repo": "https://github.com/headllines/hackernews-daily",
+        "desc": "通过 GitHub 订阅 Hacker News 每日 top 10",
+        "vote": 1,
+        "hash": "cd715b1f3aad88fd3127733550701a17"
     }
 ]
