@@ -368,7 +368,7 @@
     {
         "repo": "https://github.com/g0v/newshelper-extension",
         "desc": "協助您判別含有誤導資訊的新聞",
-        "vote": 1,
+        "vote": 2,
         "hash": "d51d8978cb8396a6dc9e94b46800d725"
     },
     {
@@ -536,7 +536,7 @@
     {
         "repo": "https://github.com/dutymachine/news",
         "desc": "最新的dutymachine",
-        "vote": 2,
+        "vote": 3,
         "hash": "9366a542dae9f877c34c28c03ab0dff8"
     },
     {
@@ -572,7 +572,7 @@
     {
         "repo": "https://github.com/headllines/hackernews-daily",
         "desc": "通过 GitHub 订阅 Hacker News 每日 top 10",
-        "vote": 1,
+        "vote": 2,
         "hash": "cd715b1f3aad88fd3127733550701a17"
     }
 ]
