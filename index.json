@@ -21,7 +21,7 @@
         "repo": "https://github.com/996icu/996.ICU",
         "desc": "996.ICU",
         "hash": "8892e4153a89c495b34511d1ab45c850",
-        "vote": 2
+        "vote": 3
     },
     {
         "repo": "https://github.com/fuckcqcs/fuckcqcs",
@@ -45,7 +45,7 @@
         "repo": "https://github.com/evil-huawei/evil-huawei",
         "desc": "华为作过的恶",
         "hash": "9ad657012bdf3390d1dfdb771d75882f",
-        "vote": 1
+        "vote": 2
     },
     {
         "repo": "https://github.com/renjie-feng-trash/fengrenjie",
@@ -290,7 +290,7 @@
     {
         "repo": "https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo",
         "desc": "学习强国 懒人刷分工具 自动学习",
-        "vote": 4,
+        "vote": 5,
         "hash": "4982f68bfa87c1c757798a220011f459"
     },
     {
@@ -308,7 +308,7 @@
     {
         "repo": "https://github.com/programthink/zhao",
         "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
-        "vote": 9,
+        "vote": 10,
         "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
     },
     {
@@ -332,7 +332,7 @@
     {
         "repo": "https://github.com/privacytools/privacytools.io",
         "desc": "已知最好的反对全球大规模监控的隐私保护工具目录。You are being watched. Protect your privacy against global mass surveillance.",
-        "vote": 3,
+        "vote": 6,
         "hash": "9b42a89482aa22314ab3f54d5067b72a"
     },
     {
@@ -530,7 +530,7 @@
     {
         "repo": "https://github.com/LuoSheng12345/zhao",
         "desc": "基于 编程随想 整理的《太子党关系网络》，专门揭露赵国的权贵。zhao-visualized.netlify.app可以看到这些人的关系。",
-        "vote": 2,
+        "vote": 3,
         "hash": "edc0d005f334e15060438190ae5ba67c"
     },
     {
@@ -542,7 +542,7 @@
     {
         "repo": "https://github.com/LuoSheng12345/zhao-visualized",
         "desc": "这是将编程随想的《太子党关系网络》数据可视化项目的一部分。这个部分展示了这些人的关系，去这里 https://zhao-visualized.netlify.app 可以看到这个repo自动生成的网站。",
-        "vote": 2,
+        "vote": 3,
         "hash": "062446c6ab771070d013e486a5c7cf32"
     },
     {
@@ -554,7 +554,7 @@
     {
         "repo": "https://github.com/program-think-mirror/program-think-mirror.github.io",
         "desc": "编程随想的博客GithubPage镜像  访问[https://program-think-mirror.github.io](https://program-think-mirror.github.io)",
-        "vote": 2,
+        "vote": 3,
         "hash": "a9afa48501ea4e5b255052ec9a282da4"
     },
     {
