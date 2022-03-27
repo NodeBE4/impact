@@ -580,5 +580,11 @@
         "desc": "Bypass Paywalls web browser extension for Chrome and Firefox.",
         "vote": 1,
         "hash": "a5d835c96414e20edaaf1bf97d436741"
+    },
+    {
+        "repo": "https://github.com/agorahub/blog0",
+        "desc": "零博客 聚合各类评论文章（绕开付费墙）",
+        "vote": 1,
+        "hash": "4c2c6e41f9f6cb2447478b142ac5cc96"
     }
 ]
