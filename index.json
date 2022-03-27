@@ -592,5 +592,11 @@
         "desc": "零新闻 聚合各类简体中文新闻",
         "vote": 1,
         "hash": "db3c72ae571e57f007a23381e968f66f"
+    },
+    {
+        "repo": "https://github.com/agorahub/pen0",
+        "desc": "The Republic of Agora ⓪ [阿格拉共和工作区](https://github.com/agorahub/_meta/issues/5)",
+        "vote": 1,
+        "hash": "c8ca1c0b7898d603a79ca0885aa5a558"
     }
 ]
