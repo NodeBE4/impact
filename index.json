@@ -586,5 +586,11 @@
         "desc": "零博客 聚合各类评论文章（绕开付费墙）",
         "vote": 1,
         "hash": "4c2c6e41f9f6cb2447478b142ac5cc96"
+    },
+    {
+        "repo": "https://github.com/agorahub/news0",
+        "desc": "零新闻 聚合各类简体中文新闻",
+        "vote": 1,
+        "hash": "db3c72ae571e57f007a23381e968f66f"
     }
 ]
