@@ -598,5 +598,11 @@
         "desc": "The Republic of Agora ⓪ [阿格拉共和工作区](https://github.com/agorahub/_meta/issues/5)",
         "vote": 1,
         "hash": "c8ca1c0b7898d603a79ca0885aa5a558"
+    },
+    {
+        "repo": "https://github.com/The-Run-Philosophy-Organization/run",
+        "desc": "润学全球官方指定GITHUB，整理润学宗旨、纲领、理论和各类润之实例。注：润，即run、跑路的意思。",
+        "vote": 1,
+        "hash": "78d966bbb65b4cfbdcb2c759a5f2284e"
     }
 ]
