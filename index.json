@@ -604,5 +604,11 @@
         "desc": "润学全球官方指定GITHUB，整理润学宗旨、纲领、理论和各类润之实例。注：润，即run、跑路的意思。",
         "vote": 1,
         "hash": "78d966bbb65b4cfbdcb2c759a5f2284e"
+    },
+    {
+        "repo": "https://github.com/WeNeedHome/SummaryOfLoanSuspension",
+        "desc": "全国各省市烂尾楼停贷通知汇总",
+        "vote": 1,
+        "hash": "dc06d74e67fc6625c417de798c164b71"
     }
 ]
