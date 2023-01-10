@@ -21,7 +21,7 @@
         "repo": "https://github.com/996icu/996.ICU",
         "desc": "996.ICU",
         "hash": "8892e4153a89c495b34511d1ab45c850",
-        "vote": 4
+        "vote": 5
     },
     {
         "repo": "https://github.com/fuckcqcs/fuckcqcs",
@@ -63,7 +63,7 @@
         "repo": "https://github.com/2019ncovmemory/nCovMemory",
         "desc": "2020新冠肺炎记忆：传媒报道与非虚构写作（持续更新）",
         "hash": "a5df62abdb4432c885c02fc2d490342e",
-        "vote": 2
+        "vote": 3
     },
     {
         "repo": "https://github.com/civicforum/civicforum.github.io",
@@ -111,7 +111,7 @@
         "repo": "https://github.com/Terminus2049/Terminus2049.github.io",
         "desc": "在 GitHub 开放平台搭建的一个站点，以去中心化的方式备份微信、微博等平台被删文章",
         "hash": "ada243b459be33aeaa54b9b4ce66c18d",
-        "vote": 2
+        "vote": 3
     },
     {
         "repo": "https://github.com/Terminus2049/Wechatscope",
@@ -296,7 +296,7 @@
     {
         "repo": "https://github.com/sikaozhe1997/Xin-Yue",
         "desc": "岳昕：致北大师生与北大外国语学院的一封公开信",
-        "vote": 3,
+        "vote": 4,
         "hash": "2a97a61cf238921a449dd382f1135c56"
     },
     {
@@ -536,7 +536,7 @@
     {
         "repo": "https://github.com/dutymachine/news",
         "desc": "最新的dutymachine",
-        "vote": 3,
+        "vote": 4,
         "hash": "9366a542dae9f877c34c28c03ab0dff8"
     },
     {
