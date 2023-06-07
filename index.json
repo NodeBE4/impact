@@ -1,0 +1,614 @@
+[
+    {
+        "repo": "https://github.com/NGOMeToo/NGOMeToo.github.io",
+        "desc": "反性骚扰/性侵犯的关注 & 赋能志愿者小组，意在给受性骚扰／性侵犯当事人提供安全友好的举报环境、信息技术、媒体支持及法律/心理援助对接等志愿服务。",
+        "hash": "73195f57b9492ede6c8f7a02b8031ac5",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/global4jingyao/global4jingyao",
+        "desc": "Jingyao支持者们发起的项目，同步整理jingyao诉刘强东案的时间线、庭审和网络声援信息。",
+        "hash": "44f290ce8ff529ab9f8420a664cd8eb9",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/Terminus2049/Not-exist-in-douban",
+        "desc": "豆瓣不存在的书影音",
+        "hash": "bbf8701e6350cacba7580f75e7d3a2a9",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/996icu/996.ICU",
+        "desc": "996.ICU",
+        "hash": "8892e4153a89c495b34511d1ab45c850",
+        "vote": 5
+    },
+    {
+        "repo": "https://github.com/fuckcqcs/fuckcqcs",
+        "desc": "问题疫苗事件相关企业的各类疫苗在各省份的销售情况",
+        "hash": "ded71a5118f327d8ef3f9dc5d0643984",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/speechfree/StandWithHongKong_TreeHole",
+        "desc": "Fight for Freedom and Stand With Hong Kong",
+        "hash": "9d97c1cc21ba6ba442424735fe4bd087",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/chinatimeline/data",
+        "desc": "中国政治和社会事件时间线数据仓库",
+        "hash": "d59b4b296d3fe662ef6fd0b230d319b8",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/evil-huawei/evil-huawei",
+        "desc": "华为作过的恶",
+        "hash": "9ad657012bdf3390d1dfdb771d75882f",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/renjie-feng-trash/fengrenjie",
+        "desc": "这个repo是为了锤北大垃圾教授——冯仁杰 ",
+        "hash": "c923aeaf59733ec1c132f68cfea5043b",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/lbj96347/2020-virus-map",
+        "desc": "新型冠状病毒在线地图",
+        "hash": "85b405f214dd91982bd855ddbbd8113d",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/2019ncovmemory/nCovMemory",
+        "desc": "2020新冠肺炎记忆：传媒报道与非虚构写作（持续更新）",
+        "hash": "a5df62abdb4432c885c02fc2d490342e",
+        "vote": 3
+    },
+    {
+        "repo": "https://github.com/civicforum/civicforum.github.io",
+        "desc": "公民教育",
+        "hash": "d2ebee027368344587b88759ae5ee12d",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/DamoresClub/DamoresClub.github.io",
+        "desc": "像James Damore一样参与公共讨论",
+        "hash": "15051720ba9e2ac8039b388051833598",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/ChenChunCamus/article",
+        "desc": "陈纯的文章合集",
+        "hash": "4aa7bc9d68dd2596bf0671a4df7a4c60",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/bennytai/HongKongReflections",
+        "desc": "思考香港系列(戴耀廷)",
+        "hash": "4e0eee958c5c65204ed6967069309d15",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/Arioseins/English-Study",
+        "desc": "英语新闻翻译项目",
+        "hash": "b0f7c8a758876aea9655090bb4b3a479",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/yousi-society/yousi-society.github.io",
+        "desc": "游思学社",
+        "hash": "008e29416458cd72ddc72a060ed8ace3",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/Info-cn/LirenCollege",
+        "desc": "立大博客",
+        "hash": "9249b251ae972b619e304d8c456a0783",
+        "vote": 3
+    },
+    {
+        "repo": "https://github.com/Terminus2049/Terminus2049.github.io",
+        "desc": "在 GitHub 开放平台搭建的一个站点，以去中心化的方式备份微信、微博等平台被删文章",
+        "hash": "ada243b459be33aeaa54b9b4ce66c18d",
+        "vote": 3
+    },
+    {
+        "repo": "https://github.com/Terminus2049/Wechatscope",
+        "desc": "查看被删除的微信公众号文章",
+        "hash": "1aa3ec4b408e8894aaeeccd6547bd3b6",
+        "vote": 5
+    },
+    {
+        "repo": "https://github.com/Terminus2049/matters-metadata",
+        "desc": "获取 <https://matters.news/> 元信息，备份 ipfs hash",
+        "hash": "46a6da9023f11663441ce8530d16cb2d",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/MohuBackup/MohuBackup.github.io",
+        "desc": "膜乎备份计划",
+        "hash": "a7230fccf4e0e6e3ca25841279817de0",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/2049bbs/2049bbs.github.io",
+        "desc": "2049BBS 镜像站，每15分钟更新",
+        "hash": "3be5bf7a348aaf82c12c15daa3f73028",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/speechfree/letscorp",
+        "desc": "墙外楼镜像站",
+        "hash": "06cbaf93d15350d668d66d0e8454d13f",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/china-digital-times/china-digital-times.github.io",
+        "desc": "中国数字时代的免翻墙镜像与离线浏览",
+        "hash": "c3852123ef097e820dadcc425592a540",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/PincongBackup/PincongBackup.github.io",
+        "desc": "品葱备份计划",
+        "hash": "8599bc1440bee3fdf728887191c81130",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/weblegacydownload/qdaily-backup",
+        "desc": "好奇心日报备份（HTML格式）",
+        "hash": "39f6b4d7753f91092d5cfd4e86f87242",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/LampScript/qdaily_backup",
+        "desc": "好奇心日报备份计划",
+        "hash": "7783dfc1ccd68c1057b1f1ddedeb73c9",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/ibeidou/ibeidou-articles",
+        "desc": "北斗全集",
+        "hash": "a291ecae7e0958c207c935337cb266fb",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/howardrotterdam/backup-1984bbs",
+        "desc": "the backup of articles from sbb4891",
+        "hash": "d2916f93b1c73c7dc940e119a0ee162b",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/Terminus2049/1984bbs",
+        "desc": "1984BBS 存档镜像",
+        "hash": "19c19649092f91051de52eff774c4dfa",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/speechfree/xys",
+        "desc": "新语丝镜像站",
+        "hash": "141f50bfb28973636a808f47166361b4",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/speechfree/cultural-revolution-database",
+        "desc": "中国文化大革命文库",
+        "hash": "01a274ff301fe36e266c68861c8c4270",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/program-think-mirrors/blog",
+        "desc": "编程随想的博客镜像",
+        "hash": "01305b7e44b012ac3b83cf92b01cd4d8",
+        "vote": 5
+    },
+    {
+        "repo": "https://github.com/program-think-mirrors/books",
+        "desc": "编程随想的电子书镜像",
+        "hash": "a0a43b5454ac80d4d05cdfc70b7d7c08",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/lihkg-backup/lihkg-backup.github.io",
+        "desc": "LIHKG❤️Github (Unofficial)",
+        "hash": "2c55fbdbd7b552938fdbd274703662e0",
+        "vote": 2
+    },
+    {
+        "repo": "https://github.com/lihkg-backup/thread",
+        "desc": "lihkg-backup json 格式数据备份",
+        "hash": "fec52c4888189fc422381271f9dd34a2",
+        "vote": 1
+    },
+    {
+        "repo": "https://github.com/duty-machine/duty-machine",
+        "desc": "一个备份网络文章的服务。当前支持的网站有：微信公众平台，微博文章，知乎专栏，豆瓣日记，豆瓣小组话题，matters，telegraph，chinadigitaltimes，rfa。",
+        "vote": 4,
+        "hash": "5c847e0c9321a8d3cf5eea7fa234c28f"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/opinion",
+        "desc": "聚合以社会、政治话题为主的文章和社交媒体上优秀Up主的评论 ",
+        "vote": 8,
+        "hash": "184dc00d00fae28d0efdc9b5c7b7f98d"
+    },
+    {
+        "repo": "https://github.com/chinatimeline/chinatimeline.github.io",
+        "desc": "中国社会与政治事件时间线展示和新闻事件提交网站",
+        "vote": 3,
+        "hash": "1319f5423520b333172ca83acf013b13"
+    },
+    {
+        "repo": "https://github.com/speechfree/fightforfreedom",
+        "desc": "内容根据 中国文字狱事件盘点 发布的推特整理而成。\r\n\r\n盘点中国近年文字狱事件，为中国网警执法案例做义务宣传！#言论自由 Collection of incidents that Chinese authorities violate rights of speech freedom. #speechfreedom",
+        "vote": 1,
+        "hash": "5f56ebe5cd99b5207dcd51fdfd276f9d"
+    },
+    {
+        "repo": "https://github.com/WomenInNCoV/WomenInNCoV.github.io",
+        "desc": "",
+        "vote": 1,
+        "hash": "5e8b6c8fedafd4a7c3e838543f383ce2"
+    },
+    {
+        "repo": "https://github.com/zhangrunxu/zhangrunxu.github.io",
+        "desc": "许章润非官方言论集",
+        "vote": 1,
+        "hash": "ce30a328192f4f301479088bd67bb2aa"
+    },
+    {
+        "repo": "https://github.com/martinwu42/pkubbsbackup",
+        "desc": "北大未名BBS备份",
+        "vote": 1,
+        "hash": "921014bb2531a96104e179a7b27511f2"
+    },
+    {
+        "repo": "https://github.com/ctf-db/onechildpolicy",
+        "desc": "One Child Policy 相关书影音",
+        "vote": 1,
+        "hash": "1cd5ecacfc3b39028aa7d394bd26fe1e"
+    },
+    {
+        "repo": "https://github.com/CNwoman-bot/evil-man",
+        "desc": "Evil Man - 中国男性之恶",
+        "vote": 1,
+        "hash": "f9ec80d4982592c680ce893bd17287c6"
+    },
+    {
+        "repo": "https://github.com/ffffffff0x/Dork-Admin",
+        "desc": "盘点近年来的数据泄露、供应链污染事件",
+        "vote": 1,
+        "hash": "3f851e6f6ec9ab9adce244511dd547eb"
+    },
+    {
+        "repo": "https://github.com/ffffffff0x/Digital-Privacy",
+        "desc": "一个关于数字隐私搜集、保护、清理集一体的方案,外加开源信息收集(OSINT)对抗 (长期更新)",
+        "vote": 1,
+        "hash": "52c0849551d8b8c3f13e3f58afef72fc"
+    },
+    {
+        "repo": "https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo",
+        "desc": "学习强国 懒人刷分工具 自动学习",
+        "vote": 5,
+        "hash": "4982f68bfa87c1c757798a220011f459"
+    },
+    {
+        "repo": "https://github.com/sikaozhe1997/Xin-Yue",
+        "desc": "岳昕：致北大师生与北大外国语学院的一封公开信",
+        "vote": 4,
+        "hash": "2a97a61cf238921a449dd382f1135c56"
+    },
+    {
+        "repo": "https://github.com/shengxinjing/programmer-job-blacklist",
+        "desc": "🙈程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞",
+        "vote": 1,
+        "hash": "be25ba2a785dc242a1de06435e209d8e"
+    },
+    {
+        "repo": "https://github.com/programthink/zhao",
+        "desc": "【编程随想】整理的《太子党关系网络》，专门揭露赵国的权贵",
+        "vote": 16,
+        "hash": "4e493cd8730e0fd2e3432a72f55b9d61"
+    },
+    {
+        "repo": "https://github.com/cn/constitution",
+        "desc": "中华人民共和国宪法",
+        "vote": 1,
+        "hash": "31ae7b6c6132e78e020a3ff08e0320c7"
+    },
+    {
+        "repo": "https://github.com/Gnothi-Seauton/COVID-19-timeline",
+        "desc": "记录自2019年12月起武汉新冠肺炎疫情进展的时间线。",
+        "vote": 3,
+        "hash": "85b7b1ef7faebb0ad328110c53404b8a"
+    },
+    {
+        "repo": "https://github.com/diymysite/analytics",
+        "desc": "阐述网站流量分析和互联网监控、隐私的项目",
+        "vote": 3,
+        "hash": "1c2a7392112aa0023e0d942875f4011c"
+    },
+    {
+        "repo": "https://github.com/privacytools/privacytools.io",
+        "desc": "已知最好的反对全球大规模监控的隐私保护工具目录。You are being watched. Protect your privacy against global mass surveillance.",
+        "vote": 6,
+        "hash": "9b42a89482aa22314ab3f54d5067b72a"
+    },
+    {
+        "repo": "https://github.com/gorhill/uBlock",
+        "desc": "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean. 反跟踪的浏览器阻拦插件。",
+        "vote": 1,
+        "hash": "a1ece9817b331b353ef7e83308e5fae2"
+    },
+    {
+        "repo": "https://github.com/zealotCE/AmericaOpposeAmerica",
+        "desc": "《美国反对美国》是王沪宁先生在上世纪80年代末赴美观察写作的。",
+        "vote": 2,
+        "hash": "f05508c11c370ca21c7075992d358e28"
+    },
+    {
+        "repo": "https://github.com/ruanyf/free-books",
+        "desc": "互联网上的免费书籍",
+        "vote": 1,
+        "hash": "733da329fdfc57cd656fb9823656e805"
+    },
+    {
+        "repo": "https://github.com/Tsai1993/aisixiang",
+        "desc": "爱思想网文章备份，截至2017",
+        "vote": 1,
+        "hash": "0fb8d7fad6c6655fa5a35a99115dd131"
+    },
+    {
+        "repo": "https://github.com/CNValues/cnvalues.github.io",
+        "desc": "CN Values是基于8values源代码开发制作的娱乐性政治立场测试。为了使测试更贴近国人，在参考数个其他测试后，以中国当下语境为背景重新编制了测试题。",
+        "vote": 5,
+        "hash": "854654bfcfed5e43307276bdaa01fd9c"
+    },
+    {
+        "repo": "https://github.com/g0v/newshelper-extension",
+        "desc": "協助您判別含有誤導資訊的新聞",
+        "vote": 2,
+        "hash": "d51d8978cb8396a6dc9e94b46800d725"
+    },
+    {
+        "repo": "https://github.com/steamsth/beidafanyou",
+        "desc": "北京大学右派分子反动言论汇集",
+        "vote": 2,
+        "hash": "3151ae2a54ad51a14a237ac84eb4d25a"
+    },
+    {
+        "repo": "https://github.com/formulahendry/955.WLB",
+        "desc": "955 不加班的公司名单 - 工作 955，work–life balance (工作与生活的平衡)",
+        "vote": 1,
+        "hash": "9afe812fe99cdff158416e78a87c2d4a"
+    },
+    {
+        "repo": "https://github.com/lib-pku/libpku",
+        "desc": "贵校课程资料民间整理",
+        "vote": 1,
+        "hash": "faa6605c41f4fe4592c32861f5a73ddb"
+    },
+    {
+        "repo": "https://github.com/CPdogson/996action",
+        "desc": "一些关于维护八小时工作制和双休制的行动",
+        "vote": 1,
+        "hash": "529f3148e52bb818e4e2b8ef6ae0b837"
+    },
+    {
+        "repo": "https://github.com/JadaGates/ShadowsocksBio",
+        "desc": "记录一下SS的前世今生，以及一个简单的教程总结",
+        "vote": 2,
+        "hash": "cc341ae89a255a647d9fc8c585236614"
+    },
+    {
+        "repo": "https://github.com/FooCoder666/zhuling",
+        "desc": "公众号没药花园有关朱令案的所有文章",
+        "vote": 1,
+        "hash": "f14b6fae72e086c0f8ed0c25fd6f3f9b"
+    },
+    {
+        "repo": "https://github.com/jiayiliujiayi/2020nCov_individual_archives",
+        "desc": "\"Every individual matters. Every individual has a role to play.\" This is a repository that archives the individual stories during the COVID19 pandemic. 备份普通人在疫情期间的记录。（持续翻译 & 更新中）",
+        "vote": 1,
+        "hash": "84000763d43c4a6db5593d29c886a31c"
+    },
+    {
+        "repo": "https://github.com/nodebe4/weixin",
+        "desc": "新》查看被删除的微信公众号文章  (nodejs+jekyll)",
+        "vote": 4,
+        "hash": "257c2e72f2f5fbd0d638b09d73e75758"
+    },
+    {
+        "repo": "https://github.com/WeileiZeng/Open-Source-COVID-19",
+        "desc": "这个导航网站统计了开源平台上抵抗新冠肺炎的项目，是一个连结各个开源项目的入口。 超过一万人参与了这个列表中的项目，并获得了超过一万颗星。",
+        "vote": 2,
+        "hash": "d5736e112c018f5691bc4508b15df352"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/art",
+        "desc": "自由派文艺作品：音乐、影视、书籍、游戏",
+        "vote": 2,
+        "hash": "09249f2cf65838f23ed85a2327c12618"
+    },
+    {
+        "repo": "https://github.com/chinapedia/wikipedia.zh",
+        "desc": "中文维基百科导出 chinapedia.org",
+        "vote": 1,
+        "hash": "4a55684169943273603ef96815c1402d"
+    },
+    {
+        "repo": "https://github.com/PincongBot/qdaily",
+        "desc": "好奇心日报备份（json格式）",
+        "vote": 3,
+        "hash": "025f790680ba378343b3b1210aa1bf49"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/hero",
+        "desc": "纪念那些对公众自由作出贡献的说真话的人物",
+        "vote": 2,
+        "hash": "24ce09eab43dd5ab620f5bcc90edf4e8"
+    },
+    {
+        "repo": "https://github.com/zhu327/rss",
+        "desc": "RSS工厂，生成微博，微信公众号，知乎日报RSS",
+        "vote": 1,
+        "hash": "6178df6e714416bf02a2a3e96756adde"
+    },
+    {
+        "repo": "https://github.com/FreshRSS/FreshRSS",
+        "desc": "A free, self-hostable aggregator… [freshrss.org](https://freshrss.org)",
+        "vote": 2,
+        "hash": "ba813caf7175e40351460fdff886d6e0"
+    },
+    {
+        "repo": "https://github.com/RSS-Bridge/rss-bridge",
+        "desc": "The RSS feed for websites missing it",
+        "vote": 1,
+        "hash": "45eedaeb3aa350a0d853a3cc27d20b71"
+    },
+    {
+        "repo": "https://github.com/invishantom/nCovMemory",
+        "desc": "2020新冠肺炎记忆：传媒报道与非虚构写作（原项目的fork）",
+        "vote": 2,
+        "hash": "6869a1d22cffb0811445a0a2283051ab"
+    },
+    {
+        "repo": "https://github.com/net4people/bbs/",
+        "desc": "讨论互联网审查的高质量论坛",
+        "vote": 2,
+        "hash": "6829adcc6fe60425a04752b4c6eb3aa0"
+    },
+    {
+        "repo": "https://github.com/co-memory/bbs/",
+        "desc": "公共空间抢救小组讨论区",
+        "vote": 1,
+        "hash": "3cc83ee13a11886c1b2e5100d19fd460"
+    },
+    {
+        "repo": "https://github.com/DIYgod/RSSHub",
+        "desc": "RSS生成引擎，万物皆可RSS",
+        "vote": 6,
+        "hash": "438bfba3f191ab16c21abb7a72bac900"
+    },
+    {
+        "repo": "https://github.com/NodeBE4/21ccom",
+        "desc": "共识网(21ccom.net)是大师云集的思想平台，于2016年被当局以传播错误思想为由关闭。本项目为共识网的互联网时光机快照提供索引。",
+        "vote": 2,
+        "hash": "f1d28f266e7354dd42292c5e0824dc5c"
+    },
+    {
+        "repo": "https://github.com/programthink/sites",
+        "desc": "【编程随想】收藏的各色网站",
+        "vote": 1,
+        "hash": "1111e2779ed2c672412c43b2a30d6e4f"
+    },
+    {
+        "repo": "https://github.com/thematters/matters-web",
+        "desc": "Codebase of Matters' website",
+        "vote": 1,
+        "hash": "6549f2fdc825c40aaf0e6a97bef6e6a7"
+    },
+    {
+        "repo": "https://github.com/v2fly/v2ray-core",
+        "desc": "A platform for building proxies to bypass network restrictions.",
+        "vote": 1,
+        "hash": "9327303a657bd76901f1adb73b6140f8"
+    },
+    {
+        "repo": "https://github.com/chinyichun/programthinkmirror",
+        "desc": "编程随想的博客及其评论区内容备份",
+        "vote": 1,
+        "hash": "9bec590ee1fffd72f4ab05d47d3686dd"
+    },
+    {
+        "repo": "https://github.com/timqian/chinese-independent-blogs",
+        "desc": "中文独立博客列表",
+        "vote": 1,
+        "hash": "fe3538269bab113af4ee2b757bdae3b5"
+    },
+    {
+        "repo": "https://github.com/LuoSheng12345/zhao",
+        "desc": "基于 编程随想 整理的《太子党关系网络》，专门揭露赵国的权贵。zhao-visualized.netlify.app可以看到这些人的关系。",
+        "vote": 3,
+        "hash": "edc0d005f334e15060438190ae5ba67c"
+    },
+    {
+        "repo": "https://github.com/dutymachine/news",
+        "desc": "最新的dutymachine",
+        "vote": 4,
+        "hash": "9366a542dae9f877c34c28c03ab0dff8"
+    },
+    {
+        "repo": "https://github.com/LuoSheng12345/zhao-visualized",
+        "desc": "这是将编程随想的《太子党关系网络》数据可视化项目的一部分。这个部分展示了这些人的关系，去这里 https://zhao-visualized.netlify.app 可以看到这个repo自动生成的网站。",
+        "vote": 3,
+        "hash": "062446c6ab771070d013e486a5c7cf32"
+    },
+    {
+        "repo": "https://github.com/diymysite/blog",
+        "desc": "教你怎么建这样一个博客",
+        "vote": 1,
+        "hash": "dd86d2d7bfee6b936dbce9f2c06b88c0"
+    },
+    {
+        "repo": "https://github.com/program-think-mirror/program-think-mirror.github.io",
+        "desc": "编程随想的博客GithubPage镜像  访问[https://program-think-mirror.github.io](https://program-think-mirror.github.io)",
+        "vote": 3,
+        "hash": "a9afa48501ea4e5b255052ec9a282da4"
+    },
+    {
+        "repo": "https://github.com/ipfs/awesome-ipfs",
+        "desc": "Useful resources for using IPFS and building things on top of it",
+        "vote": 1,
+        "hash": "2935e8f7353ada8168fbc53ba6062783"
+    },
+    {
+        "repo": "https://github.com/zmike1993/hello-world",
+        "desc": "思想杂货铺",
+        "vote": 1,
+        "hash": "82595a142e2277f8fe022ea198c55e8e"
+    },
+    {
+        "repo": "https://github.com/headllines/hackernews-daily",
+        "desc": "通过 GitHub 订阅 Hacker News 每日 top 10",
+        "vote": 2,
+        "hash": "cd715b1f3aad88fd3127733550701a17"
+    },
+    {
+        "repo": "https://github.com/iamadamdev/bypass-paywalls-chrome",
+        "desc": "Bypass Paywalls web browser extension for Chrome and Firefox.",
+        "vote": 1,
+        "hash": "a5d835c96414e20edaaf1bf97d436741"
+    },
+    {
+        "repo": "https://github.com/agorahub/blog0",
+        "desc": "零博客 聚合各类评论文章（绕开付费墙）",
+        "vote": 1,
+        "hash": "4c2c6e41f9f6cb2447478b142ac5cc96"
+    },
+    {
+        "repo": "https://github.com/agorahub/news0",
+        "desc": "零新闻 聚合各类简体中文新闻",
+        "vote": 1,
+        "hash": "db3c72ae571e57f007a23381e968f66f"
+    },
+    {
+        "repo": "https://github.com/agorahub/pen0",
+        "desc": "The Republic of Agora ⓪ [阿格拉共和工作区](https://github.com/agorahub/_meta/issues/5)",
+        "vote": 1,
+        "hash": "c8ca1c0b7898d603a79ca0885aa5a558"
+    },
+    {
+        "repo": "https://github.com/The-Run-Philosophy-Organization/run",
+        "desc": "润学全球官方指定GITHUB，整理润学宗旨、纲领、理论和各类润之实例。注：润，即run、跑路的意思。",
+        "vote": 1,
+        "hash": "78d966bbb65b4cfbdcb2c759a5f2284e"
+    },
+    {
+        "repo": "https://github.com/WeNeedHome/SummaryOfLoanSuspension",
+        "desc": "全国各省市烂尾楼停贷通知汇总",
+        "vote": 1,
+        "hash": "dc06d74e67fc6625c417de798c164b71"
+    }
+]
