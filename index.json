@@ -117,7 +117,7 @@
         "repo": "https://github.com/Terminus2049/Wechatscope",
         "desc": "查看被删除的微信公众号文章",
         "hash": "1aa3ec4b408e8894aaeeccd6547bd3b6",
-        "vote": 5
+        "vote": 6
     },
     {
         "repo": "https://github.com/Terminus2049/matters-metadata",
@@ -201,7 +201,7 @@
         "repo": "https://github.com/program-think-mirrors/blog",
         "desc": "编程随想的博客镜像",
         "hash": "01305b7e44b012ac3b83cf92b01cd4d8",
-        "vote": 5
+        "vote": 6
     },
     {
         "repo": "https://github.com/program-think-mirrors/books",
