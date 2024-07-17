@@ -610,5 +610,11 @@
         "desc": "全国各省市烂尾楼停贷通知汇总",
         "vote": 1,
         "hash": "dc06d74e67fc6625c417de798c164b71"
+    },
+    {
+        "repo": "https://github.com/peggykittypuppy/peggykittypuppy.github.io",
+        "desc": "托管端传媒，歪脑，莽莽，不明白播客，women4china，Matters，CDT 这几家相对温和的华语传媒。",
+        "vote": 1,
+        "hash": "5d07f03cd9a3c65385f8aed8c53af6c4"
     }
 ]
