@@ -224,7 +224,7 @@
     {
         "repo": "https://github.com/duty-machine/duty-machine",
         "desc": "一个备份网络文章的服务。当前支持的网站有：微信公众平台，微博文章，知乎专栏，豆瓣日记，豆瓣小组话题，matters，telegraph，chinadigitaltimes，rfa。",
-        "vote": 4,
+        "vote": 5,
         "hash": "5c847e0c9321a8d3cf5eea7fa234c28f"
     },
     {
